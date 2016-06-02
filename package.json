@@ -1,0 +1,22 @@
+{
+  "name": "bateeq-models",
+  "version": "1.0.0",
+  "description": "bateeq models",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moon-lay/bateeq-models.git"
+  },
+  "author": "Moonlay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moon-lay/bateeq-models/issues"
+  },
+  "homepage": "https://github.com/moon-lay/bateeq-models#readme",
+  "dependencies": {
+    "capital-models": "^1.0.12"
+  }
+}
