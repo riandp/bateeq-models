@@ -1,28 +1,33 @@
 module.exports = {
-    master: {
-        Area: require('./src/master/area'),
-        City: require('./src/master/city'),
-        Store: require('./src/master/store'),
-        Supplier: require('./src/master/supplier')
+    article: {
+        ArticleApproval: require('./src/article/article-approval'),
+        ArticleBarcode: require('./src/article/article-barcode'),
+        ArticleCategory: require('./src/article/article-category'),
+        ArticleColor: require('./src/article/article-color'),
+        ArticleCostCalculationDetail: require('./src/article/article-cost-calculation-detail'),
+        ArticleCostCalculation: require('./src/article/article-cost-calculation'),
+        ArticleMotif: require('./src/article/article-motif'),
+        ArticleOrigin: require('./src/article/article-origin'),
+        ArticleSeason: require('./src/article/article-season'),
+        ArticleSize: require('./src/article/article-size'),
+        ArticleStyle: require('./src/article/article-style'),
+        ArticleSubCategory: require('./src/article/article-sub-category'),
+        Article: require('./src/article/article'),
     },
-    product: {
-        ProductCategory: require('./src/product/product-category'),
-        ProductMaterial: require('./src/product/product-material'),
-        ProductMotif: require('./src/product/product-category'),
-        ProductOrigin: require('./src/product/product-origin'),
-        ProductSeason: require('./src/product/product-season'),
-        ProductSize: require('./src/product/product-size'),
-        ProductSubCategory: require('./src/product/product-sub-category'),
-        ProductModel: require('./src/product/product-model'),
-        Product: require('./src/product/product'),
+    inventory:{
+        InventoryMovement: require('./src/inventory/inventory-movement'),
+        Inventory: require('./src/inventory/inventory'),
+        StockIn: require('./src/inventory/stock-in'),
+        StockItem: require('./src/inventory/stock-item'),
+        StockOut: require('./src/inventory/stock-out'),
+        Storage: require('./src/inventory/storage')
     },
-    promotional:{
-        Discount: require('./src/promotional/discount'),
-        DiscountItem: require('./src/promotional/discount-item'),
-        Voucher: require('./src/promotional/voucher'),
+    manufacture:{
+        FinishingItem: require('./src/manufacture/finishing-item'),
+        Finishing: require('./src/manufacture/finishing')
     },
-    sales:{
-        Invoice: require('./src/sales/invoice'),
-        InvoiceItem: require('./src/sales/invoice-item'),
-    }
+    master: { 
+        MaterialCategory: require('./src/master/material-category'),
+        Material: require('./src/master/material')
+    },
 }

@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/moon-lay/bateeq-models#readme",
   "dependencies": {
-    "capital-models": "^1.0.12"
+    "capital-models": "git+https://git@github.com/pinkgorilla/capital-models.git"
   }
 }
