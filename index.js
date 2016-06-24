@@ -1,7 +1,6 @@
 module.exports = {
     article: {
         ArticleApproval: require('./src/article/article-approval'),
-        ArticleBarcode: require('./src/article/article-barcode'),
         ArticleCategory: require('./src/article/article-category'),
         ArticleColor: require('./src/article/article-color'),
         ArticleCostCalculationDetail: require('./src/article/article-cost-calculation-detail'),
@@ -12,6 +11,8 @@ module.exports = {
         ArticleSize: require('./src/article/article-size'),
         ArticleStyle: require('./src/article/article-style'),
         ArticleSubCategory: require('./src/article/article-sub-category'),
+        ArticleType: require('./src/article/article-type'),
+        ArticleVariant: require('./src/article/article-variant'),
         Article: require('./src/article/article'),
     },
     inventory: {
