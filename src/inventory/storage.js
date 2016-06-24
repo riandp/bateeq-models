@@ -2,7 +2,7 @@
 
 var MongoModel = require('capital-models').MongoModel;
 
-class Storage extends MongoModel {
+module.exports = class Storage extends MongoModel {
     constructor(source) {
         super('storage', '1.0.0');
 

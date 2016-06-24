@@ -2,7 +2,9 @@
 
 var MongoModel = require('capital-models').MongoModel;
 
-class ArticleApproval extends MongoModel {
+var Article = require('./article');
+
+module.exports = class ArticleApproval extends MongoModel {
     constructor(source) {
         super('article-approval', '1.0.0');
 
@@ -12,7 +14,7 @@ class ArticleApproval extends MongoModel {
         this.date = new Date();
         
         this.articleId = {};
-        this.article = {};
+        this.article = new Article();
         
         this.remark = '';
         this.approved = false;

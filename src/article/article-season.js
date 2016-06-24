@@ -2,7 +2,7 @@
 
 var MongoModel = require('capital-models').MongoModel;
 
-class ArticleSeason extends MongoModel {
+module.exports = class ArticleSeason extends MongoModel {
     constructor(source) {
         super('article-season', '1.0.0');
 

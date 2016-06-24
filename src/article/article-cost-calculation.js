@@ -2,7 +2,7 @@
 
 var MongoModel = require('capital-models').MongoModel;
 
-class ArticleCostCalculation extends MongoModel {
+module.exports = class ArticleCostCalculation extends MongoModel {
     constructor(source) {
         super('article-cost-calculation', '1.0.0');
 

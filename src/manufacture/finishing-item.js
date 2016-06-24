@@ -1,14 +1,15 @@
 'use strict'
 
 var MongoModel = require('capital-models').MongoModel;
+var ArticleVariant = require('../article/article-variant');
 
-class FinishingItem extends MongoModel {
+module.exports = class FinishingItem extends MongoModel {
     constructor(source) {
         super('finishing-item', '1.0.0');
 
         // Define properties.
-        this.articleId = {};
-        this.articleBarcode = '';
+        this.articleVariantId = {};
+        this.articleVariant = new ArticleVariant();
         this.quantity = 0;
 
         this.copy(source);

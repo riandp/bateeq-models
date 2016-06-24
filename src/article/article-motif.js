@@ -2,7 +2,7 @@
 
 var MongoModel = require('capital-models').MongoModel;
 
-class ArticleMotif extends MongoModel {
+module.exports = class ArticleMotif extends MongoModel {
     constructor(source) {
         super('article-motif', '1.0.0');
 

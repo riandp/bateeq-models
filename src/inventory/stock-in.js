@@ -2,7 +2,7 @@
 
 var MongoModel = require('capital-models').MongoModel;
 
-class StockIn extends MongoModel {
+module.exports = class StockIn extends MongoModel {
     constructor(source) {
         super('stock-in', '1.0.0');
 

@@ -2,7 +2,7 @@
 
 var MongoModel = require('capital-models').MongoModel;
 
-class ArticleStyle extends MongoModel {
+module.exports = class ArticleStyle extends MongoModel {
     constructor(source) {
         super('article-style', '1.0.0');
 

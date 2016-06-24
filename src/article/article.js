@@ -2,7 +2,15 @@
 
 var MongoModel = require('capital-models').MongoModel;
 
-class Article extends MongoModel {
+var ArticleType = require('./article-type');
+var ArticleOrigin = require('./article-origin');
+var ArticleCategory = require('./article-category');
+var ArticleSubCategory = require('./article-sub-category');
+var ArticleStyle = require('./article-style');
+var ArticleSeason = require('./article-season');
+var ArticleMotif= require('./article-motif');
+
+module.exports = class Article extends MongoModel {
     constructor(source) {
         super('article', '1.0.0');
 
@@ -12,25 +20,28 @@ class Article extends MongoModel {
         this.name = '';
         this.version = '1.0';
         
+        this.typeId = {};
+        this.type = new ArticleType();
+        
         this.originId = {};
-        this.origin = {};
+        this.origin = new ArticleOrigin();
         
         this.categoryId = {};
-        this.category = {};
+        this.category = new ArticleCategory();
         
         this.subCategoryId = {};
-        this.subCategory = {};
+        this.subCategory = new ArticleSubCategory();
         
         this.styleId = {};
-        this.style = {};
+        this.style = new ArticleStyle();
         
         this.seasonId = {};
-        this.season = {};
+        this.season = new ArticleSeason();
         
         this.motifId = {};
-        this.motif = {};
+        this.motif = new ArticleMotif();
         
-        this.lauch = new Date();
+        this.launch = new Date();
         this.weight = 0;
         this.status = '';
         this.approved = false;
@@ -40,7 +51,7 @@ class Article extends MongoModel {
         this.calculation = {};
         this.colors = [];
         this.sizes = [];
-        this.barcodes = [];
+        this.variants = [];
 
         this.copy(source);
     }

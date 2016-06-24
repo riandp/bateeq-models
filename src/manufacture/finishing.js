@@ -2,7 +2,7 @@
 
 var MongoModel = require('capital-models').MongoModel;
 
-class Finishing extends MongoModel {
+module.exports = class Finishing extends MongoModel {
     constructor(source) {
         super('finishing', '1.0.0');
 

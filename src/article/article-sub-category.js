@@ -2,7 +2,7 @@
 
 var MongoModel = require('capital-models').MongoModel;
 
-class ArticleSubCategory extends MongoModel {
+module.exports = class ArticleSubCategory extends MongoModel {
     constructor(source) {
         super('article-sub-category', '1.0.0');
 
