@@ -14,7 +14,7 @@ module.exports = {
         ArticleSubCategory: require('./src/article/article-sub-category'),
         Article: require('./src/article/article'),
     },
-    inventory:{
+    inventory: {
         InventoryMovement: require('./src/inventory/inventory-movement'),
         Inventory: require('./src/inventory/inventory'),
         StockIn: require('./src/inventory/stock-in'),
@@ -22,12 +22,13 @@ module.exports = {
         StockOut: require('./src/inventory/stock-out'),
         Storage: require('./src/inventory/storage')
     },
-    manufacture:{
+    manufacture: {
         FinishingItem: require('./src/manufacture/finishing-item'),
         Finishing: require('./src/manufacture/finishing')
     },
-    master: { 
+    master: {
         MaterialCategory: require('./src/master/material-category'),
         Material: require('./src/master/material')
     },
+    map: require("./src/map")
 }
