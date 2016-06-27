@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var MongoModel = require('capital-models').MongoModel;
 var ArticleVariant = require('../article/article-variant');

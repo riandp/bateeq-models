@@ -1,3 +1,5 @@
+'use strict';
+
 var MongoModel = require('capital-models').MongoModel;
 
 module.exports = class MaterialCategory extends MongoModel {
