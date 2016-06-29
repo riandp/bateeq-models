@@ -15,7 +15,6 @@ module.exports = class Article extends MongoModel {
         super('article', '1.0.0');
 
         // Define properties.
-        this.buyerId = {};
         this.code = '';
         this.name = '';
         this.version = '1.0';
@@ -48,11 +47,12 @@ module.exports = class Article extends MongoModel {
         this.rejected = false;
         this.locked = false;
 
-        this.calculation = {};
-        this.colors = [];
+        this.color = '#FFFFFF';
+        this.tags = [];
         this.sizes = [];
         this.variants = [];
-
+        
+        this.calculation = {};
         this.copy(source);
     }
 }

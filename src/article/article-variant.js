@@ -7,8 +7,11 @@ module.exports = class ArticleVariant extends MongoModel {
         super('article-variant', '1.0.0');
 
         // Define properties.
+        this.articleId = {};
         this.code = ''; 
-        this.picture = [];
+        this.size = '';
+        this.color = '';
+        this.pictures = [];
 
         this.copy(source);
     }
