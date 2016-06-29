@@ -9,6 +9,7 @@ module.exports = class Storage extends MongoModel {
         // Define properties.
         this.code = '';
         this.name = '';
+        this.description = '';
         this.address = '';
         this.phone = '';
         
