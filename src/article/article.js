@@ -17,8 +17,10 @@ module.exports = class Article extends MongoModel {
         // Define properties.
         this.code = '';
         this.name = '';
-        this.version = '1.0';
+        this.description = '';
         
+        this.version = '1.0';
+    
         this.typeId = {};
         this.type = new ArticleType();
         

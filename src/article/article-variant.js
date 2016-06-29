@@ -9,6 +9,8 @@ module.exports = class ArticleVariant extends MongoModel {
         // Define properties.
         this.articleId = {};
         this.code = ''; 
+        this.name = ''; 
+        this.description = '';
         this.size = '';
         this.color = '';
         this.pictures = [];
