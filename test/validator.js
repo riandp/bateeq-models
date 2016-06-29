@@ -231,8 +231,8 @@ var validateArticleVariant = function(data) {
     data.should.have.property('color');
     data.color.should.instanceof(String);
 
-    data.should.have.property('picture');
-    data.picture.should.instanceof(Array);
+    data.should.have.property('pictures');
+    data.pictures.should.instanceof(Array);
 };
 
 var validateArticle = function(data) {
