@@ -9,6 +9,7 @@ module.exports = {
         ArticleStyle: 'article-styles',
         ArticleSeason: 'article-seasons',
         ArticleMotif: 'article-motifs',
+        ArticleVariant: 'article-variants',
     },
     inventory: {
         Storage: 'storages',
