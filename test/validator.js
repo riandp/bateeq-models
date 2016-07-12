@@ -141,6 +141,14 @@ else {
 
         data.should.have.property('description');
         data.description.should.instanceof(String);
+        
+        data.should.have.property('subCounters');
+        data.subCounters.should.instanceof(Array);
+        
+        for(var sub of data.subCounters)
+        {
+            validateArticleSubCounter(sub);
+        }
     };
 
 

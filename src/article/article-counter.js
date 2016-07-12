@@ -10,6 +10,8 @@ module.exports = class ArticleCounter extends BaseModel {
         this.code = '';
         this.name = '';
         this.description = '';
+        
+        this.subCounters = [];
 
         this.copy(source);
     }
