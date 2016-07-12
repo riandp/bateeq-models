@@ -1,17 +1,19 @@
 'use strict'
 
 var BaseModel = require('capital-models').BaseModel;
+var ArticleCounter = require('./article-counter');
 
-module.exports = class ArticleCostCalculation extends BaseModel {
+module.exports = class ArticleSubCounter extends BaseModel {
     constructor(source) {
-        super('article-cost-calculation', '1.0.0');
+        super('article-sub-counter', '1.0.0');
 
         // Define properties.
         this.code = '';
         this.name = '';
         this.description = '';
         
-        this.details = [];
+        this.counterId = {};
+        this.counter = new ArticleCounter();
 
         this.copy(source);
     }

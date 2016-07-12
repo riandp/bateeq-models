@@ -1,9 +1,9 @@
 'use strict'
 
-var MongoModel = require('capital-models').MongoModel;
+var BaseModel = require('capital-models').BaseModel;
 var ArticleVariant = require('../article/article-variant');
 
-module.exports = class InventoryMovement extends MongoModel {
+module.exports = class InventoryMovement extends BaseModel {
     constructor(source) {
         super('inventory-movement', '1.0.0');
 

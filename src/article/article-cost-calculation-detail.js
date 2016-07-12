@@ -1,9 +1,9 @@
 'use strict'
 
-var MongoModel = require('capital-models').MongoModel;
+var BaseModel = require('capital-models').BaseModel;
 var Article = require('./article');
 
-module.exports = class ArticleCostCalculationDetail extends MongoModel {
+module.exports = class ArticleCostCalculationDetail extends BaseModel {
     constructor(source) {
         super('article-cost-calculation-detail', '1.0.0');
 
@@ -22,4 +22,4 @@ module.exports = class ArticleCostCalculationDetail extends MongoModel {
 
         this.copy(source);
     }
-}
+} 

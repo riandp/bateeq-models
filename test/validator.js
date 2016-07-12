@@ -38,6 +38,20 @@ else {
         data.locked.should.be.Boolean();
     };
 
+    var validateArticleBrand = function(data) {
+        data.should.not.equal(null);
+        data.should.instanceof(Object);
+
+        data.should.have.property('code');
+        data.code.should.instanceof(String);
+
+        data.should.have.property('name');
+        data.name.should.instanceof(String);
+
+        data.should.have.property('description');
+        data.description.should.instanceof(String);
+    };
+
     var validateArticleCategory = function(data) {
         data.should.not.equal(null);
         data.should.instanceof(Object);
@@ -115,6 +129,36 @@ else {
             validateArticleCostCalculationDetail(detail);
     };
 
+    var validateArticleCounter = function(data) {
+        data.should.not.equal(null);
+        data.should.instanceof(Object);
+
+        data.should.have.property('code');
+        data.code.should.instanceof(String);
+
+        data.should.have.property('name');
+        data.name.should.instanceof(String);
+
+        data.should.have.property('description');
+        data.description.should.instanceof(String);
+    };
+
+
+    var validateArticleMaterial = function(data) {
+        data.should.not.equal(null);
+        data.should.instanceof(Object);
+
+        data.should.have.property('code');
+        data.code.should.instanceof(String);
+
+        data.should.have.property('name');
+        data.name.should.instanceof(String);
+
+        data.should.have.property('description');
+        data.description.should.instanceof(String);
+    };
+
+
     var validateArticleMotif = function(data) {
         data.should.not.equal(null);
         data.should.instanceof(Object);
@@ -171,7 +215,7 @@ else {
         data.description.should.instanceof(String);
     };
 
-    var validateArticleStyle = function(data) {
+    var validateArticleSubCounter = function(data) {
         data.should.not.equal(null);
         data.should.instanceof(Object);
 
@@ -185,7 +229,7 @@ else {
         data.description.should.instanceof(String);
     };
 
-    var validateArticleSubCategory = function(data) {
+    var validateArticleTheme = function(data) {
         data.should.not.equal(null);
         data.should.instanceof(Object);
 
@@ -232,8 +276,8 @@ else {
         data.should.have.property('size');
         data.size.should.instanceof(String);
 
-        data.should.have.property('color');
-        data.color.should.instanceof(String);
+        // data.should.have.property('color');
+        // data.color.should.instanceof(String);
 
         data.should.have.property('pictures');
         data.pictures.should.instanceof(Array);
@@ -248,6 +292,9 @@ else {
 
         data.should.have.property('name');
         data.name.should.instanceof(String);
+        
+        data.should.have.property('description');
+        data.description.should.instanceof(String);
 
         data.should.have.property('version');
         data.version.should.instanceof(String);
@@ -258,6 +305,13 @@ else {
         data.should.have.property('type');
         data.type.should.instanceof(Object);
         validateArticleType(data.type);
+
+        data.should.have.property('brandId');
+        data.brandId.should.instanceof(Object);
+
+        data.should.have.property('brand');
+        data.brand.should.instanceof(Object);
+        validateArticleBrand(data.brand);
 
         data.should.have.property('originId');
         data.originId.should.instanceof(Object);
@@ -272,20 +326,35 @@ else {
         data.should.have.property('category');
         data.category.should.instanceof(Object);
         validateArticleCategory(data.category);
+        
+        
+        data.should.have.property('counterId');
+        data.counterId.should.instanceof(Object);
 
-        data.should.have.property('subCategoryId');
-        data.subCategoryId.should.instanceof(Object);
+        data.should.have.property('counter');
+        data.counter.should.instanceof(Object);
+        validateArticleCounter(data.counter);
 
-        data.should.have.property('subCategory');
-        data.subCategory.should.instanceof(Object);
-        validateArticleSubCategory(data.subCategory);
+        data.should.have.property('subCounterId');
+        data.subCounterId.should.instanceof(Object);
 
-        data.should.have.property('styleId');
-        data.styleId.should.instanceof(Object);
+        data.should.have.property('subCounter');
+        data.subCounter.should.instanceof(Object);
+        validateArticleSubCounter(data.subCounter);
+        
+        data.should.have.property('materialId');
+        data.materialId.should.instanceof(Object);
 
-        data.should.have.property('style');
-        data.style.should.instanceof(Object);
-        validateArticleStyle(data.style);
+        data.should.have.property('material');
+        data.material.should.instanceof(Object);
+        validateArticleMaterial(data.material);
+
+        data.should.have.property('themeId');
+        data.themeId.should.instanceof(Object);
+
+        data.should.have.property('theme');
+        data.theme.should.instanceof(Object);
+        validateArticleTheme(data.theme);
 
         data.should.have.property('seasonId');
         data.seasonId.should.instanceof(Object);
@@ -300,6 +369,13 @@ else {
         data.should.have.property('motif');
         data.motif.should.instanceof(Object);
         validateArticleMotif(data.motif);
+
+        data.should.have.property('colorId');
+        data.colorId.should.instanceof(Object);
+
+        data.should.have.property('color');
+        data.color.should.instanceof(Object);
+        validateArticleColor(data.color);
 
         data.should.have.property('launch');
         data.launch.should.be.Date();
@@ -328,16 +404,19 @@ else {
 
     exports.article = {
         articleApproval: validateArticleApproval,
+        articleBrand: validateArticleBrand,
         articleCategory: validateArticleCategory,
         articleColor: validateArticleColor,
         articleCostCalculationDetail: validateArticleCostCalculationDetail,
         articleCostCalculation: validateArticleCostCalculation,
+        articleCounter: validateArticleCounter,
+        articleMaterial: validateArticleMaterial,
         articleMotif: validateArticleMotif,
         articleOrigin: validateArticleOrigin,
         articleSeason: validateArticleSeason,
         articleSize: validateArticleSize,
-        articleStyle: validateArticleStyle,
-        articleSubCategory: validateArticleSubCategory,
+        articleSubCounter: validateArticleSubCounter,
+        articleTheme: validateArticleTheme,
         articleType: validateArticleType,
         articleVariant: validateArticleVariant,
         article: validateArticle

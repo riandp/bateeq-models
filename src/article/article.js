@@ -1,16 +1,20 @@
 'use strict'
 
-var MongoModel = require('capital-models').MongoModel;
+var BaseModel = require('capital-models').BaseModel;
 
 var ArticleType = require('./article-type');
+var ArticleBrand = require('./article-brand');
 var ArticleOrigin = require('./article-origin');
 var ArticleCategory = require('./article-category');
-var ArticleSubCategory = require('./article-sub-category');
-var ArticleStyle = require('./article-style');
+var ArticleCounter = require('./article-counter');
+var ArticleSubCounter = require('./article-sub-counter');
+var ArticleTheme = require('./article-theme');
+var ArticleMaterial = require('./article-material');
 var ArticleSeason = require('./article-season');
 var ArticleMotif= require('./article-motif');
+var ArticleColor= require('./article-color');
 
-module.exports = class Article extends MongoModel {
+module.exports = class Article extends BaseModel {
     constructor(source) {
         super('article', '1.0.0');
 
@@ -24,17 +28,26 @@ module.exports = class Article extends MongoModel {
         this.typeId = {};
         this.type = new ArticleType();
         
+        this.brandId = {};
+        this.brand = new ArticleBrand();
+        
         this.originId = {};
         this.origin = new ArticleOrigin();
         
         this.categoryId = {};
         this.category = new ArticleCategory();
         
-        this.subCategoryId = {};
-        this.subCategory = new ArticleSubCategory();
+        this.counterId = {};
+        this.counter = new ArticleCounter();
         
-        this.styleId = {};
-        this.style = new ArticleStyle();
+        this.subCounterId = {};
+        this.subCounter = new ArticleSubCounter();
+        
+        this.materialId = {};
+        this.material = new ArticleMaterial();
+        
+        this.themeId = {};
+        this.theme = new ArticleTheme();
         
         this.seasonId = {};
         this.season = new ArticleSeason();
@@ -42,14 +55,16 @@ module.exports = class Article extends MongoModel {
         this.motifId = {};
         this.motif = new ArticleMotif();
         
+        this.colorId = {};
+        this.color = new ArticleColor();
+        
         this.launch = new Date();
         this.weight = 0;
         this.status = '';
         this.approved = false;
         this.rejected = false;
         this.locked = false;
-
-        this.color = '#FFFFFF';
+ 
         this.tags = [];
         this.sizes = [];
         this.variants = [];

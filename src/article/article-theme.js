@@ -1,10 +1,10 @@
 'use strict'
 
-var MongoModel = require('capital-models').MongoModel;
+var BaseModel = require('capital-models').BaseModel;
 
-module.exports = class ArticleSubCategory extends MongoModel {
+module.exports = class ArticleTheme extends BaseModel {
     constructor(source) {
-        super('article-sub-category', '1.0.0');
+        super('article-theme', '1.0.0');
 
         // Define properties.
         this.code = '';

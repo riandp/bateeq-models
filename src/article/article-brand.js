@@ -2,9 +2,9 @@
 
 var BaseModel = require('capital-models').BaseModel;
 
-module.exports = class ArticleSeason extends BaseModel {
+module.exports = class ArticleBrand extends BaseModel {
     constructor(source) {
-        super('article-season', '1.0.0');
+        super('article-brand', '1.0.0');
 
         // Define properties.
         this.code = '';

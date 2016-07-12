@@ -1,8 +1,8 @@
 'use strict'
 
-var MongoModel = require('capital-models').MongoModel;
+var BaseModel = require('capital-models').BaseModel;
 
-module.exports = class Storage extends MongoModel {
+module.exports = class Storage extends BaseModel {
     constructor(source) {
         super('storage', '1.0.0');
 

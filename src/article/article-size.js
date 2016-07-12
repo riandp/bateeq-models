@@ -1,8 +1,8 @@
 'use strict'
 
-var MongoModel = require('capital-models').MongoModel;
+var BaseModel = require('capital-models').BaseModel;
 
-module.exports = class ArticleSize extends MongoModel {
+module.exports = class ArticleSize extends BaseModel {
     constructor(source) {
         super('article-size', '1.0.0');
 
