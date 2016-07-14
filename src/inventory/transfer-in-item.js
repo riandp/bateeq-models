@@ -11,7 +11,7 @@ module.exports = class StockItem extends BaseModel {
         this.articleVariantId = {};
         this.articleVariant = new ArticleVariant();
         this.quantity = 0;
-        this.remark = 0;
+        this.remark = '';
 
         this.copy(source);
     }
