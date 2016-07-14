@@ -24,7 +24,11 @@ module.exports = {
         StockIn: require('./src/inventory/stock-in'),
         StockItem: require('./src/inventory/stock-item'),
         StockOut: require('./src/inventory/stock-out'),
-        Storage: require('./src/inventory/storage')
+        Storage: require('./src/inventory/storage'),
+        TransferInDoc: require('./src/inventory/transfer-in-doc'),
+        TransferInItem: require('./src/inventory/transfer-in-item'),
+        TransferOutDoc: require('./src/inventory/transfer-out-doc'),
+        TransferOutItem: require('./src/inventory/transfer-out-item')
     },
     manufacture: {
         FinishingItem: require('./src/manufacture/finishing-item'),

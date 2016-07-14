@@ -29,3 +29,13 @@ it("#06. Storage should valid", function(){
     var Storage = require('../src/inventory/storage');
     validate.storage(new Storage());
 }) 
+
+it("#07. TransferInDoc should valid", function(){
+    var TransferInDoc = require('../src/inventory/transfer-in-doc');
+    validate.transferInDoc(new TransferInDoc());
+}) 
+
+it("#08. TransferOutDoc should valid", function(){
+    var TransferOutDoc = require('../src/inventory/transfer-out-doc');
+    validate.transferOutDoc(new TransferOutDoc());
+}) 

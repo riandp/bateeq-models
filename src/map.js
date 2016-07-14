@@ -23,7 +23,9 @@ module.exports = {
         StockIn: 'stock-ins',
         StockOut: 'stock-outs',
         Inventory: 'inventories',
-        InventoryMovement: 'inventory-movements'
+        InventoryMovement: 'inventory-movements',
+        TransferInDoc: 'transfer-in-docs',
+        TransferOutDoc: 'transfer-out-docs'
     },
     manufacture: {
         Finishing: 'finishings'
