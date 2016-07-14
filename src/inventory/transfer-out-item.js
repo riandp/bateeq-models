@@ -9,7 +9,7 @@ module.exports = class StockItem extends BaseModel {
 
         // Define properties.  
         this.articleVariantId = {};
-        this.articleVariant = new ArticleVariant();
+        this.articleVariant = {};
         this.quantity = 0;
         this.remark = '';
 
