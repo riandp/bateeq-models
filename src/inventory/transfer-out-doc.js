@@ -1,6 +1,7 @@
 'use strict'
 
 var BaseModel = require('capital-models').BaseModel;
+var TransferOutItem = require('./transfer-out-item');
 
 module.exports = class TransferOutDoc extends BaseModel {
     constructor(source) {
@@ -22,5 +23,12 @@ module.exports = class TransferOutDoc extends BaseModel {
         this.remark = '';
 
         this.copy(source);
+        
+        var _items = [];
+        for(var item of this.items)
+        {
+            _items.push(new TransferOutItem(item));
+        }
+        this.items = _items;
     }
 }
