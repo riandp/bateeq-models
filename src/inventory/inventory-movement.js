@@ -8,8 +8,9 @@ module.exports = class InventoryMovement extends BaseModel {
         super('inventory-movement', '1.0.0');
 
         // Define properties. 
-        this.stockTrxId = {};
+        this.inventoryId = {};
         this.storageId = {};
+        this.storage = {};
         this.date = new Date();
         this.articleVariantId = {};
         this.articleVariant = new ArticleVariant();
