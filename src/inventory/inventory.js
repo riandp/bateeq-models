@@ -9,6 +9,7 @@ module.exports = class Inventory extends BaseModel {
 
         // Define properties. 
         this.storageId = {}; 
+        this.storage = {};
         this.articleVariantId = {};
         this.articleVariant = new ArticleVariant();
         this.quantity = 0;
