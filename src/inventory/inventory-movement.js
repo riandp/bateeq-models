@@ -14,6 +14,7 @@ module.exports = class InventoryMovement extends BaseModel {
         this.storage = new Storage();
         this.date = new Date();
         this.reference = '';
+        this.type = '';
         this.articleVariantId = {};
         this.articleVariant = new ArticleVariant();
         this.before = 0;

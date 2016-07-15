@@ -443,6 +443,9 @@ else {
         
         data.should.have.property('reference');
         data.reference.should.instanceof(String);
+        
+        data.should.have.property('type');
+        data.type.should.instanceof(String);
 
         data.should.have.property('storageId');
         data.storageId.should.instanceof(Object);
