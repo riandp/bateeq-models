@@ -1,6 +1,7 @@
 'use strict';
 
 var BaseModel = require('capital-models').BaseModel;
+var Storage = require('../inventory/storage');
 var ArticleVariant = require('../article/article-variant');
 
 module.exports = class Inventory extends BaseModel {
@@ -9,7 +10,7 @@ module.exports = class Inventory extends BaseModel {
 
         // Define properties. 
         this.storageId = {}; 
-        this.storage = {};
+        this.storage = new Storage();
         this.articleVariantId = {};
         this.articleVariant = new ArticleVariant();
         this.quantity = 0;
