@@ -437,10 +437,12 @@ else {
         
         data.should.have.property('inventoryId');
         data.inventoryId.should.instanceof(Object);
-
-
+ 
         data.should.have.property('date');
         data.date.should.be.Date();
+        
+        data.should.have.property('reference');
+        data.reference.should.instanceof(String);
 
         data.should.have.property('storageId');
         data.storageId.should.instanceof(Object);
