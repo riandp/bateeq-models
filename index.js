@@ -40,7 +40,7 @@ module.exports = {
     },
     core: {
         Module: require('./src/core/module')
-    }
+    },
     map: require("./src/map"),
     validator: require("./test/validator")
 }
