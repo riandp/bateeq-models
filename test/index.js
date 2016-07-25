@@ -26,3 +26,4 @@ var test = function (name, path) {
 test('@article', './article');
 test('@inventory', './inventory');
 test('@manufacture', './manufacture');
+test('@core', './core');

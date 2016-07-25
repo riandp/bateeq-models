@@ -29,5 +29,8 @@ module.exports = {
     },
     manufacture: {
         Finishing: 'finishings'
+    },
+    core: {
+        Module: 'modules'
     }
 }

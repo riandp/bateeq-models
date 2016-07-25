@@ -38,6 +38,9 @@ module.exports = {
         MaterialCategory: require('./src/master/material-category'),
         Material: require('./src/master/material')
     },
+    core: {
+        Module: require('./src/core/module')
+    }
     map: require("./src/map"),
     validator: require("./test/validator")
 }

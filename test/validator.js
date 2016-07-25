@@ -141,12 +141,11 @@ else {
 
         data.should.have.property('description');
         data.description.should.instanceof(String);
-        
+
         data.should.have.property('subCounters');
         data.subCounters.should.instanceof(Array);
-        
-        for(var sub of data.subCounters)
-        {
+
+        for (var sub of data.subCounters) {
             validateArticleSubCounter(sub);
         }
     };
@@ -300,7 +299,7 @@ else {
 
         data.should.have.property('name');
         data.name.should.instanceof(String);
-        
+
         data.should.have.property('description');
         data.description.should.instanceof(String);
 
@@ -334,8 +333,8 @@ else {
         data.should.have.property('category');
         data.category.should.instanceof(Object);
         validateArticleCategory(data.category);
-        
-        
+
+
         data.should.have.property('counterId');
         data.counterId.should.instanceof(Object);
 
@@ -349,7 +348,7 @@ else {
         data.should.have.property('subCounter');
         data.subCounter.should.instanceof(Object);
         validateArticleSubCounter(data.subCounter);
-        
+
         data.should.have.property('materialId');
         data.materialId.should.instanceof(Object);
 
@@ -434,16 +433,16 @@ else {
     var validateInventoryMovement = function(data) {
         data.should.not.equal(null);
         data.should.instanceof(Object);
-        
+
         data.should.have.property('inventoryId');
         data.inventoryId.should.instanceof(Object);
- 
+
         data.should.have.property('date');
         data.date.should.be.Date();
-        
+
         data.should.have.property('reference');
         data.reference.should.instanceof(String);
-        
+
         data.should.have.property('type');
         data.type.should.instanceof(String);
 
@@ -463,20 +462,20 @@ else {
 
         data.should.have.property('before');
         data.before.should.be.Number();
-        
+
         data.should.have.property('quantity');
         data.quantity.should.be.Number();
-        
+
         data.should.have.property('after');
         data.after.should.be.Number();
-        
+
         data.should.have.property('remark');
         data.remark.should.instanceof(String);
     };
 
     var validateInventory = function(data) {
         data.should.not.equal(null);
-        data.should.instanceof(Object); 
+        data.should.instanceof(Object);
 
         data.should.have.property('storageId');
         data.storageId.should.instanceof(Object);
@@ -587,7 +586,7 @@ else {
 
         data.should.have.property('reference');
         data.reference.should.instanceof(String);
-        
+
         data.should.have.property('sourceId');
         data.sourceId.should.instanceof(Object);
         data.should.have.property('source');
@@ -597,27 +596,25 @@ else {
         data.destinationId.should.instanceof(Object);
         data.should.have.property('destination');
         data.destination.should.instanceof(Object);
-        
+
         data.should.have.property('items');
         data.items.should.instanceof(Array);
-        
-        for(var item of data.items)
-        {
+
+        for (var item of data.items) {
             validateTransferInItem(item);
         }
 
         data.should.have.property('remark');
         data.remark.should.instanceof(String);
     };
-    
-    var validateTransferInItem = function(data)
-    {
+
+    var validateTransferInItem = function(data) {
         data.should.not.equal(null);
         data.should.instanceof(Object);
 
         data.should.have.property('articleVariantId');
         data.articleVariantId.should.instanceof(Object);
-        
+
         data.should.have.property('articleVariant');
         data.articleVariant.should.instanceof(Object);
 
@@ -626,7 +623,7 @@ else {
 
         data.should.have.property('remark');
         data.remark.should.instanceof(String);
-          
+
         data.should.have.property('remark');
         data.remark.should.instanceof(String);
     };
@@ -643,7 +640,7 @@ else {
 
         data.should.have.property('reference');
         data.reference.should.instanceof(String);
-        
+
         data.should.have.property('sourceId');
         data.sourceId.should.instanceof(Object);
         data.should.have.property('source');
@@ -653,27 +650,25 @@ else {
         data.destinationId.should.instanceof(Object);
         data.should.have.property('destination');
         data.destination.should.instanceof(Object);
-        
+
         data.should.have.property('items');
         data.items.should.instanceof(Array);
-        
-        for(var item of data.items)
-        {
+
+        for (var item of data.items) {
             validateTransferOutItem(item);
         }
 
         data.should.have.property('remark');
         data.remark.should.instanceof(String);
     };
-    
-    var validateTransferOutItem = function(data)
-    {
+
+    var validateTransferOutItem = function(data) {
         data.should.not.equal(null);
         data.should.instanceof(Object);
 
         data.should.have.property('articleVariantId');
         data.articleVariantId.should.instanceof(Object);
-        
+
         data.should.have.property('articleVariant');
         data.articleVariant.should.instanceof(Object);
 
@@ -682,7 +677,7 @@ else {
 
         data.should.have.property('remark');
         data.remark.should.instanceof(String);
-          
+
         data.should.have.property('remark');
         data.remark.should.instanceof(String);
     };
@@ -741,4 +736,24 @@ else {
         finishingItem: validateFinishingItem,
         finishing: validateFinishing
     }
+
+    var validateModule = function(data) {
+        data.should.not.equal(null);
+        data.should.instanceof(Object);
+
+        data.should.have.property('code');
+        data.code.should.instanceof(String);
+
+        data.should.have.property('name');
+        data.name.should.instanceof(String);
+
+        data.should.have.property('description');
+        data.description.should.instanceof(String);
+
+        data.should.have.property('config');
+        data.config.should.instanceof(Object);
+    };
+    exports.core = {
+        module: validateModule
+    };
 }
