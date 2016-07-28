@@ -753,7 +753,28 @@ else {
         data.should.have.property('config');
         data.config.should.instanceof(Object);
     };
+
+    var validateModuleSeed = function(data) {
+        data.should.not.equal(null);
+        data.should.instanceof(Object);
+
+        data.should.have.property('moduleId');
+        data.moduleId.should.instanceof(Object);
+        
+        data.should.have.property('module');
+        data.module.should.instanceof(Object); 
+        
+        data.should.have.property('year');
+        data.year.should.be.Number();
+        
+        data.should.have.property('month');
+        data.month.should.be.Number();
+        
+        data.should.have.property('seed');
+        data.seed.should.be.Number(); 
+    };
     exports.core = {
-        module: validateModule
+        module: validateModule,
+        moduleSeed: validateModuleSeed
     };
 }

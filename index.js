@@ -39,7 +39,8 @@ module.exports = {
         Material: require('./src/master/material')
     },
     core: {
-        Module: require('./src/core/module')
+        Module: require('./src/core/module'),
+        ModuleSeed: require('./src/core/module-seed')
     },
     map: require("./src/map"),
     validator: require("./test/validator")

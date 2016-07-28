@@ -31,6 +31,7 @@ module.exports = {
         Finishing: 'finishings'
     },
     core: {
-        Module: 'modules'
+        Module: 'modules',
+        ModuleSeed: 'module-seeds',
     }
 }
