@@ -37,6 +37,6 @@ module.exports = {
     },
     merchandisher:
     {
-        SPKDoc: 'spk-doc'
+        SPKDoc: 'spk-docs'
     }
 }
