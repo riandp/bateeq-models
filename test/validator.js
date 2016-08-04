@@ -808,8 +808,8 @@ else {
             validateSPKItem(item);
         }
 
-        data.should.have.property('log');
-        data.log.should.be.Number();
+        data.should.have.property('isDraft');
+        data.isDraft.should.be.Number();
         
         data.should.have.property('packingList');
         data.packingList.should.instanceof(String);

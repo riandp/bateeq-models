@@ -20,7 +20,7 @@ module.exports = class SPKDoc extends BaseModel {
         this.destination = {};
 
         this.items = [];
-        this.log = '';
+        this.isDraft = 0;
         this.packingList = '';
         this.password=0;
         
