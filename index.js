@@ -42,6 +42,10 @@ module.exports = {
         Module: require('./src/core/module'),
         ModuleSeed: require('./src/core/module-seed')
     },
+    merchandisher: {
+        SPK: require('./src/merchandisher/spk-doc'),
+        SPKItem: require('./src/merchandisher/spk-item')
+    },
     map: require("./src/map"),
     validator: require("./test/validator")
 }
