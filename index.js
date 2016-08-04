@@ -29,7 +29,8 @@ module.exports = {
         TransferInItem: require('./src/inventory/transfer-in-item'),
         TransferOutDoc: require('./src/inventory/transfer-out-doc'),
         TransferOutItem: require('./src/inventory/transfer-out-item'),
-        FinishedGoodsDoc: require('./src/inventory/finished-goods-docs')
+        FinishedGoodsDoc: require('./src/inventory/finished-goods-doc'),
+        ExpeditionsDoc: require('./src/inventory/expeditions-doc')
     },
     manufacture: {
         FinishingItem: require('./src/manufacture/finishing-item'),

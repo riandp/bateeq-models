@@ -26,7 +26,8 @@ module.exports = {
         InventoryMovement: 'inventory-movements',
         TransferInDoc: 'transfer-in-docs',
         TransferOutDoc: 'transfer-out-docs',
-        FinishedGoodsDoc: 'finished-goods-docs'
+        FinishedGoodsDoc: 'finished-goods-docs',
+        ExpeditionsDoc: 'expeditions-docs'
     },
     manufacture: {
         Finishing: 'finishings'
