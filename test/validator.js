@@ -811,6 +811,9 @@ else {
         data.should.have.property('isDraft');
         data.isDraft.should.be.Number();
         
+         data.should.have.property('isReceived');
+        data.isDraft.should.be.Number();
+        
         data.should.have.property('packingList');
         data.packingList.should.instanceof(String);
         
