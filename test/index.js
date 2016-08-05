@@ -3,8 +3,9 @@ var test = function (name, path) {
         require(path);
     })
 }
- 
+
 test('@article', './article');
 test('@inventory', './inventory');
 test('@manufacture', './manufacture');
-test('@core', './core');
+test('@core', './core');  
+test('@merchandiser', './merchandiser'); 

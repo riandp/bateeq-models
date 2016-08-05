@@ -25,7 +25,8 @@ module.exports = {
         Inventory: 'inventories',
         InventoryMovement: 'inventory-movements',
         TransferInDoc: 'transfer-in-docs',
-        TransferOutDoc: 'transfer-out-docs'
+        TransferOutDoc: 'transfer-out-docs',
+        FinishedGoodsDoc: 'finished-goods-docs'
     },
     manufacture: {
         Finishing: 'finishings'
@@ -33,5 +34,9 @@ module.exports = {
     core: {
         Module: 'modules',
         ModuleSeed: 'module-seeds',
+    },
+    merchandiser:
+    {
+        SPKDoc: 'spk-docs'
     }
 }
