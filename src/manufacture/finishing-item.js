@@ -1,7 +1,7 @@
 'use strict'
 
 var BaseModel = require('capital-models').BaseModel;
-var ArticleVariant = require('../article/article-variant');
+var ArticleVariant = require('../core/article/article-variant');
 
 module.exports = class FinishingItem extends BaseModel {
     constructor(source) {

@@ -2,7 +2,7 @@
 
 var BaseModel = require('capital-models').BaseModel;
 var Storage = require('../inventory/storage');
-var ArticleVariant = require('../article/article-variant');
+var ArticleVariant = require('../core/article/article-variant');
 
 module.exports = class InventoryMovement extends BaseModel {
     constructor(source) {
