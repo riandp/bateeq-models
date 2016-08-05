@@ -1,23 +1,4 @@
 module.exports = {
-    article: {
-        ArticleApproval: 'article-approvals',
-        ArticleBrand: 'article-brands',
-        ArticleCategory: 'article-categories',
-        ArticleColor: 'article-colors',
-        ArticleCostCalculationDetail: 'article-cost-calculation-details',
-        ArticleCostCalculation: 'article-cost-calculations',
-        ArticleCounter: 'article-counters',
-        ArticleMaterial: 'article-materials',
-        ArticleMotif: 'article-motifs',
-        ArticleOrigin: 'article-origins',
-        ArticleSeason: 'article-seasons',
-        ArticleSize: 'article-sub-sizes',
-        ArticleSubCounter: 'article-sub-counters',
-        ArticleTheme: 'article-themes',
-        ArticleType: 'article-types',
-        ArticleVariant: 'article-variants',
-        Article: 'articles',
-    },
     inventory: {
         Storage: 'storages',
         StockIn: 'stock-ins',
@@ -34,9 +15,27 @@ module.exports = {
     core: {
         Module: 'modules',
         ModuleSeed: 'module-seeds',
+        article: {
+            ArticleApproval: 'article-approvals',
+            ArticleBrand: 'article-brands',
+            ArticleCategory: 'article-categories',
+            ArticleColor: 'article-colors',
+            ArticleCostCalculationDetail: 'article-cost-calculation-details',
+            ArticleCostCalculation: 'article-cost-calculations',
+            ArticleCounter: 'article-counters',
+            ArticleMaterial: 'article-materials',
+            ArticleMotif: 'article-motifs',
+            ArticleOrigin: 'article-origins',
+            ArticleSeason: 'article-seasons',
+            ArticleSize: 'article-sub-sizes',
+            ArticleSubCounter: 'article-sub-counters',
+            ArticleTheme: 'article-themes',
+            ArticleType: 'article-types',
+            ArticleVariant: 'article-variants',
+            Article: 'articles',
+        }
     },
-    merchandiser:
-    {
+    merchandiser: {
         SPKDoc: 'spk-docs'
     }
 }
