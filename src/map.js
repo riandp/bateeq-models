@@ -34,7 +34,7 @@ module.exports = {
             ArticleVariant: 'article-variants',
             Article: 'articles',
         }
-    },
+    }, 
     merchandiser: {
         SPKDoc: 'spk-docs'
     }
