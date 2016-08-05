@@ -8,7 +8,7 @@ module.exports = {
         TransferInDoc: 'transfer-in-docs',
         TransferOutDoc: 'transfer-out-docs',
         FinishedGoodsDoc: 'finished-goods-docs',
-        ExpeditionsDoc: 'expeditions-docs'
+        ExpeditionDoc: 'expedition-docs'
     },
     manufacture: {
         Finishing: 'finishings'

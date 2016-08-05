@@ -1,11 +1,11 @@
 'use strict'
 
 var BaseModel = require('capital-models').BaseModel; 
-var ExpeditionsSpk = require('./expeditions-spk');
+var ExpeditionSpk = require('./expedition-spk');
 
 module.exports = class Expeditions extends BaseModel {
     constructor(source) {
-        super('expeditions', '1.0.0');
+        super('expedition-doc', '1.0.0');
 
         // Define properties.
         this.code = '';
@@ -23,7 +23,7 @@ module.exports = class Expeditions extends BaseModel {
         var _spkDocuments = [];
         for(var spkDocument of this.spkDocuments)
         {
-            _spkDocuments.push(new ExpeditionsSpk(spkDocument));
+            _spkDocuments.push(new ExpeditionSpk(spkDocument));
         }
         this.spkDocuments = _spkDocuments;
     }

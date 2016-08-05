@@ -2,9 +2,9 @@
 
 var BaseModel = require('capital-models').BaseModel;
 
-module.exports = class ExpeditionsSpk extends BaseModel {
+module.exports = class ExpeditionSpk extends BaseModel {
     constructor(source) {
-        super('expeditions-spk', '1.0.0');
+        super('expedition-spk', '1.0.0');
 
         // Define properties.  
         this.spkDocumentId = {};
