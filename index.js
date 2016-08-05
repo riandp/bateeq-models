@@ -44,9 +44,9 @@ module.exports = {
         MaterialCategory: require('./src/master/material-category'),
         Material: require('./src/master/material')
     },
-    merchandisher: {
-        SPK: require('./src/merchandisher/spk-doc'),
-        SPKItem: require('./src/merchandisher/spk-item')
+    merchandiser: {
+        SPK: require('./src/merchandiser/spk-doc'),
+        SPKItem: require('./src/merchandiser/spk-item')
     },
     map: require("./src/map"),
     validator: require("./test/validator")
