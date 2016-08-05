@@ -839,7 +839,7 @@ else {
  
     };
     
-    exports.merchandisher = { 
+    exports.merchandiser = { 
         SPKDoc: validateSPKDoc
     };
 }
