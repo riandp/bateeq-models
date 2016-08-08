@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/moon-lay/bateeq-models.git"
+    "url": "git+https://github.com/danliris/bateeq-models.git"
   },
   "author": "Moonlay",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/moon-lay/bateeq-models/issues"
+    "url": "https://github.com/danliris/bateeq-models/issues"
   },
-  "homepage": "https://github.com/moon-lay/bateeq-models#readme",
+  "homepage": "https://github.com/danliris/bateeq-models#readme",
   "dependencies": {
     "capital-models": "git+https://git@github.com/pinkgorilla/capital-models.git"
   },
