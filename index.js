@@ -50,5 +50,5 @@ module.exports = {
         SPKItem: require('./src/merchandiser/spk-item')
     },
     map: require("./src/map"),
-    validator: require("./test/validator")
+    validator: require("./src/validator")
 }
