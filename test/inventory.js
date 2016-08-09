@@ -24,3 +24,8 @@ it("#05. TransferOutDoc should valid", function(){
     var TransferOutDoc = require('../src/inventory/transfer-out-doc');
     validate.transferOutDoc(new TransferOutDoc());
 }) 
+
+it("#09. ExpeditionDoc should valid", function(){
+    var ExpeditionDoc = require('../src/inventory/expedition-doc');
+    validate.expeditionDoc(new ExpeditionDoc());
+}) 
