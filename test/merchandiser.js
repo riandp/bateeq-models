@@ -1,6 +1,6 @@
-var validate = require('./validator').merchandiser;
+var validate = require('../src/validator').merchandiser;
 
 it("#01. SPKDoc should valid", function(){
     var SPKDoc = require('../src/merchandiser/spk-doc');
-    validate.SPKDoc=(new SPKDoc());
+    validate.SPKDoc(new SPKDoc());
 }) 

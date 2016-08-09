@@ -1,4 +1,4 @@
-var validate = require('./validator').manufacture;
+var validate = require('../src/validator').manufacture;
 
 it("#01. FinishingItem should valid", function(){
     var FinishingItem = require('../src/manufacture/finishing-item');

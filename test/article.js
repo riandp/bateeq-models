@@ -1,4 +1,4 @@
-var validate = require('./validator').article;
+var validate = require('../src/validator').core.article;
 
 it("#01. ArticleApproval should valid", function(){
     var ArticleApproval = require('../src/core/article/article-approval');

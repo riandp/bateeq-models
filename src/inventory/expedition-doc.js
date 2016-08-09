@@ -2,7 +2,7 @@
 
 var BaseModel = require('capital-models').BaseModel; 
 var ExpeditionSpk = require('./expedition-spk');
-var ExpeditionTransferOut = require('./expedition-transfer-out');
+var TransferOut = require('./transfer-out-doc');
 
 module.exports = class Expeditions extends BaseModel {
     constructor(source) {
@@ -24,15 +24,13 @@ module.exports = class Expeditions extends BaseModel {
         this.copy(source);
         
         var _transferOutDocuments = [];
-        for(var transferOutDocument of this.transferOutDocuments)
-        {
-            _transferOutDocuments.push(new ExpeditionTransferOut(transferOutDocument));
+        for(var transferOutDocument of this.transferOutDocuments) {
+            _transferOutDocuments.push(new TransferOut(transferOutDocument));
         }
         this.transferOutDocuments = _transferOutDocuments;
         
         var _spkDocuments = [];
-        for(var spkDocument of this.spkDocuments)
-        {
+        for(var spkDocument of this.spkDocuments) {
             _spkDocuments.push(new ExpeditionSpk(spkDocument));
         }
         this.spkDocuments = _spkDocuments;
