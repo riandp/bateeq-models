@@ -26,9 +26,6 @@ module.exports = {
     inventory: {
         InventoryMovement: require('./src/inventory/inventory-movement'),
         Inventory: require('./src/inventory/inventory'),
-        StockIn: require('./src/inventory/stock-in'),
-        StockItem: require('./src/inventory/stock-item'),
-        StockOut: require('./src/inventory/stock-out'),
         Storage: require('./src/inventory/storage'),
         TransferInDoc: require('./src/inventory/transfer-in-doc'),
         TransferInItem: require('./src/inventory/transfer-in-item'),
