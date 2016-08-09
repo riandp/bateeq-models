@@ -288,6 +288,30 @@ else {
 
         data.should.have.property('pictures');
         data.pictures.should.instanceof(Array);
+        
+        data.should.have.property('finishings');
+        data.finishings.should.instanceof(Array);
+        
+        for (var finishing of data.finishings) {
+            validateArticleVariantFinishing(finishing);
+        } 
+    };
+    
+    var validateArticleVariantFinishing = function(data) {
+        data.should.not.equal(null);
+        data.should.instanceof(Object);
+
+        data.should.have.property('articleVariantId');
+        data.articleVariantId.should.instanceof(Object);
+
+        data.should.have.property('articleVariant');
+        data.articleVariant.should.instanceof(Object);
+
+        data.should.have.property('quantity');
+        data.quantity.should.be.Number();
+
+        data.should.have.property('remark');
+        data.remark.should.instanceof(String);
     };
 
     var validateArticle = function(data) {
@@ -680,8 +704,54 @@ else {
 
         data.should.have.property('remark');
         data.remark.should.instanceof(String);
+    }; 
+    
+    var validateExpeditionDoc = function(data) {
+        data.should.not.equal(null);
+        data.should.instanceof(Object);
+
+        data.should.have.property('code');
+        data.code.should.instanceof(String);
+
+        data.should.have.property('date');
+        data.date.should.instanceof(Date);
+
+        data.should.have.property('expedition');
+        data.expedition.should.instanceof(String);
+        
+        data.should.have.property('weight');
+        data.weight.should.instanceof(String); 
+
+        data.should.have.property('transferOutDocumentId');
+        data.transferOutDocumentId.should.instanceof(Object);
+        data.should.have.property('transferOutDocument');
+        data.transferOutDocument.should.instanceof(Object);
+
+        data.should.have.property('spkDocuments');
+        data.spkDocuments.should.instanceof(Array);
+
+        for (var spkDocument of data.spkDocuments) {
+            validateExpeditionSpk(spkDocument);
+        } 
     };
-   
+
+    var validateExpeditionSpk = function(data) {
+        data.should.not.equal(null);
+        data.should.instanceof(Object);
+
+        data.should.have.property('spkDocumentId');
+        data.spkDocumentId.should.instanceof(Object);
+
+        data.should.have.property('spkDocument');
+        data.spkDocument.should.instanceof(Object);
+
+        data.should.have.property('quantity');
+        data.quantity.should.be.Number();
+
+        data.should.have.property('remark');
+        data.remark.should.instanceof(String); 
+    };
+    
     exports.inventory = {
         inventoryMovement: validateInventoryMovement,
         inventory: validateInventory,
@@ -690,7 +760,8 @@ else {
         stockOut: validateStockOut,
         storage: validateStorage,
         transferInDoc: validateTransferInDoc,
-        transferOutDoc: validateTransferOutDoc
+        transferOutDoc: validateTransferOutDoc,
+        expeditionDoc: validateExpeditionDoc
     }
 
 
