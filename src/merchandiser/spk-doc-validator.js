@@ -16,6 +16,8 @@ module.exports = function(data) {
     
     data.should.have.property('expeditionDocumentId');
     data.expeditionDocumentId.should.instanceof(Object);
+    data.should.have.property('expeditionDocument');
+    data.expeditionDocument.should.instanceof(Object);
 
     data.should.have.property('sourceId');
     data.sourceId.should.instanceof(Object);

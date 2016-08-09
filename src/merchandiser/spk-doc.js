@@ -14,6 +14,7 @@ module.exports = class SPKDoc extends BaseModel {
         this.reference = '';
         
         this.expeditionDocumentId = {};
+        this.expeditionDocument = {};
         
         this.sourceId = {};
         this.source = {};
