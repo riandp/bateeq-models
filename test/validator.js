@@ -721,12 +721,14 @@ else {
         
         data.should.have.property('weight');
         data.weight.should.instanceof(String); 
-
-        data.should.have.property('transferOutDocumentId');
-        data.transferOutDocumentId.should.instanceof(Object);
-        data.should.have.property('transferOutDocument');
-        data.transferOutDocument.should.instanceof(Object);
-
+        
+        data.should.have.property('transferOutDocuments');
+        data.transferOutDocuments.should.instanceof(Array);
+        
+        for (var transferOutDocument of data.transferOutDocuments) {
+            validateExpeditionTransferOut(transferOutDocument);
+        } 
+        
         data.should.have.property('spkDocuments');
         data.spkDocuments.should.instanceof(Array);
 
@@ -735,6 +737,17 @@ else {
         } 
     };
 
+    var validateExpeditionTransferOut = function(data) {
+        data.should.not.equal(null);
+        data.should.instanceof(Object);
+
+        data.should.have.property('transferOutDocumentId');
+        data.transferOutDocumentId.should.instanceof(Object);
+
+        data.should.have.property('transferOutDocument');
+        data.transferOutDocument.should.instanceof(Object); 
+    };
+    
     var validateExpeditionSpk = function(data) {
         data.should.not.equal(null);
         data.should.instanceof(Object);
