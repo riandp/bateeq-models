@@ -2,6 +2,7 @@ module.exports = {
     core: {
         module: require("./core/module-validator"),
         moduleSeed: require("./core/module-seed-validator"),
+        account: require("./core/account-validator"),
         article: {
             articleApproval: require("./core/article/article-approval-validator"),
             articleBrand: require("./core/article/article-brand-validator"),

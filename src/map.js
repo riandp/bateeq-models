@@ -17,6 +17,7 @@ module.exports = {
     core: {
         Module: 'modules',
         ModuleSeed: 'module-seeds',
+        Account: 'accounts',
         article: {
             ArticleApproval: 'article-approvals',
             ArticleBrand: 'article-brands',
