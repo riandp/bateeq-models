@@ -9,7 +9,7 @@ module.exports = {
         TransferOutDoc: 'transfer-out-docs',
         FinishedGoodsDoc: 'finished-goods-docs',
         ExpeditionDoc: 'expedition-docs',
-        Supplier: 'supplier'
+        Supplier: 'suppliers'
     },
     manufacture: {
         Finishing: 'finishings'
