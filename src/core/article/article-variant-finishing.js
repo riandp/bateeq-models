@@ -10,7 +10,7 @@ module.exports = class ArticleVariantFinishing extends BaseModel {
         // Define properties.
         this.articleVariantId = {};
         this.articleVariant = {};
-        this.quantity = 0; 
+        // this.quantity = 0; 
         this.remark = '';
 
         this.copy(source);
