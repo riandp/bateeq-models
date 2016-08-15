@@ -33,7 +33,8 @@ module.exports = {
             transferInDoc: require("./inventory/transfer-in-doc-validator"),
             transferInItem: require("./inventory/transfer-in-item-validator"),
             transferOutDoc: require("./inventory/transfer-out-doc-validator"),
-            transferOutItem: require("./inventory/transfer-out-item-validator")
+            transferOutItem: require("./inventory/transfer-out-item-validator"),
+            supplier: require("./inventory/supplier-validator"),
     },
     manufacture: {
             finishingItem: require("./manufacture/finishing-item-validator"),
