@@ -4,7 +4,7 @@ var BaseModel = require('capital-models').BaseModel;
 
 module.exports = class Supplier extends BaseModel {
     constructor(source) {
-        super('storage', '1.0.0');
+        super('supplier', '1.0.0');
 
         // Define properties.
         this.code = '';
