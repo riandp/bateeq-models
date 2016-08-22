@@ -7,6 +7,8 @@ module.exports = class FinishedGoods extends BaseModel {
         super('finished-goods', '1.0.0');
 
         // Define properties.
+        
+        this.articleId = {};
         this.code = '';
         this.name = '';
         this.description = '';

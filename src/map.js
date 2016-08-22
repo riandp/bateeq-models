@@ -38,6 +38,10 @@ module.exports = {
             Article: 'articles',
         }
     }, 
+    master: {
+        Item: 'items',
+        FinishedGoods: 'finished-goods',
+    },
     merchandiser: {
         SPKDoc: 'spk-docs'
     }

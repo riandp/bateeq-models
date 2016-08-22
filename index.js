@@ -41,8 +41,8 @@ module.exports = {
         Finishing: require('./src/manufacture/finishing')
     },
     master: {
-        MaterialCategory: require('./src/master/material-category'),
-        Material: require('./src/master/material')
+        FinishedGoods: require('./src/master/finished-goods'),
+        Item: require('./src/master/item')
     },
     merchandiser: {
         SPK: require('./src/merchandiser/spk-doc'),

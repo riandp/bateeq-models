@@ -37,6 +37,10 @@ module.exports = {
             transferOutItem: require("./inventory/transfer-out-item-validator"),
             supplier: require("./inventory/supplier-validator"),
     },
+    master: {
+            item: require("./master/item-validator"),
+            finishedGoods: require("./master/finished-goods-validator"),
+    },
     manufacture: {
             finishingItem: require("./manufacture/finishing-item-validator"),
             finishing: require("./manufacture/finishing-validator"),
