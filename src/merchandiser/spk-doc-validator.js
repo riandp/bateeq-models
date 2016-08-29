@@ -45,6 +45,6 @@ module.exports = function(data) {
     data.should.have.property('packingList');
     data.packingList.should.instanceof(String);
 
-    data.should.have.property('packingList');
-    data.password.should.be.Number();
+    data.should.have.property('password');
+    data.password.should.instanceof(String);
 };
