@@ -12,7 +12,9 @@ module.exports = {
         Supplier: 'suppliers'
     },
     manufacture: {
-        Finishing: 'finishings'
+        Finishing: 'finishings',
+        CostCalculationDocument: 'cost-calculation-documents',
+        FabricConsumptionDocument: 'fabric-consumption-documents'
     },
     core: {
         Module: 'modules',
@@ -37,10 +39,29 @@ module.exports = {
             ArticleVariant: 'article-variants',
             Article: 'articles',
         }
-    }, 
+    },
     master: {
         Item: 'items',
         FinishedGoods: 'finished-goods',
+        article: {
+            ArticleApproval: 'article-approvals',
+            ArticleBrand: 'article-brands',
+            ArticleCategory: 'article-categories',
+            ArticleColor: 'article-colors',
+            ArticleCostCalculationDetail: 'article-cost-calculation-details',
+            ArticleCostCalculation: 'article-cost-calculations',
+            ArticleCounter: 'article-counters',
+            ArticleMaterial: 'article-materials',
+            ArticleMotif: 'article-motifs',
+            ArticleOrigin: 'article-origins',
+            ArticleSeason: 'article-seasons',
+            ArticleSize: 'article-sub-sizes',
+            ArticleSubCounter: 'article-sub-counters',
+            ArticleTheme: 'article-themes',
+            ArticleType: 'article-types',
+            ArticleVariant: 'article-variants',
+            Article: 'articles',
+        }
     },
     merchandiser: {
         SPKDoc: 'spk-docs'

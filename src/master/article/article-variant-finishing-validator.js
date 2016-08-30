@@ -1,5 +1,4 @@
 require("should");
-var validateComponent = require('./component-validator');
 
 module.exports = function(data) {
     data.should.not.equal(null);
@@ -15,16 +14,14 @@ module.exports = function(data) {
     data.name.should.instanceof(String);
 
     data.should.have.property('description');
-    data.description.should.instanceof(String); 
+    data.description.should.instanceof(String);
 
-    data.should.have.property('tags');
-    data.tags.should.instanceof(String);
+    data.should.have.property('size');
+    data.size.should.instanceof(String);
+
+    // data.should.have.property('color');
+    // data.color.should.instanceof(String);
 
     data.should.have.property('pictures');
-    data.pictures.should.instanceof(Array); 
-    
-    data.should.have.property('components');
-    data.components.should.instanceof(Array);
-    for (var component of data.components)
-        validateComponent(component);
+    data.pictures.should.instanceof(Array);
 };

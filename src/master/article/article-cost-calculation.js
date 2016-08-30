@@ -1,18 +1,17 @@
-'use strict';
+'use strict'
 
 var BaseModel = require('capital-models').BaseModel;
 
-module.exports = class Item extends BaseModel {
+module.exports = class ArticleCostCalculation extends BaseModel {
     constructor(source) {
-        super('item', '1.0.0');
+        super('article-cost-calculation', '1.0.0');
 
         // Define properties.
         this.code = '';
         this.name = '';
         this.description = '';
-
-        this.components = [];
-        this.tags = '';
+        
+        this.details = [];
 
         this.copy(source);
     }

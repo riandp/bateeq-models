@@ -9,4 +9,5 @@ test('@inventory', './inventory');
 test('@manufacture', './manufacture');
 test('@core', './core');  
 test('@master', './master');  
+test('@master/article', './master-article');  
 test('@merchandiser', './merchandiser'); 

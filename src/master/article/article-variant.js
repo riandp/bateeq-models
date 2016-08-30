@@ -1,18 +1,22 @@
 'use strict'
 
 var BaseModel = require('capital-models').BaseModel;
+var ArticleVariantFinishing = require('./article-variant-finishing');
 
-module.exports = class FinishedGoods extends BaseModel {
+module.exports = class ArticleVariant extends BaseModel {
     constructor(source) {
-        super('finished-goods', '1.0.0');
+        super('article-variant', '1.0.1');
 
         // Define properties.
-        
         this.articleId = {};
         this.code = '';
         this.name = '';
         this.description = '';
-        this.tags = '';
+        
+        this.sizeId = '';
+        this.size = '';
+        
+        this.pictures = [];
 
         this.domesticCOGS = 0;
         this.domesticWholesale = 0;
@@ -23,10 +27,16 @@ module.exports = class FinishedGoods extends BaseModel {
         this.internationalWholesale = 0;
         this.internationalRetail = 0;
         this.internationalSale = 0;
-        
-        this.components = [];
-        this.pictures = [];
 
+        this.finishings = [];
+        
         this.copy(source);
+         
+        var _finishings = [];
+        for(var finishing of this.finishings)
+        {
+            _finishings.push(new ArticleVariantFinishing(finishing));
+        }
+        this.finishings = _finishings;
     }
 }

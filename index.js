@@ -37,12 +37,38 @@ module.exports = {
         Supplier: require('./src/inventory/supplier')
     },
     manufacture: {
+        FabricConsumptionDocument: require('./src/manufacture/fabric-consumption-document'),
+        FabricConsumptionArticle: require('./src/manufacture/fabric-consumption-article'),
+        FabricConsumptionItem: require('./src/manufacture/fabric-consumption-item'),
+        CostCalculationDocument: require('./src/manufacture/cost-calculation-document'),
+        CostCalculationArticle: require('./src/manufacture/cost-calculation-article'),
+        CostCalculationItem: require('./src/manufacture/cost-calculation-item'),
         FinishingItem: require('./src/manufacture/finishing-item'),
         Finishing: require('./src/manufacture/finishing')
     },
     master: {
         FinishedGoods: require('./src/master/finished-goods'),
-        Item: require('./src/master/item')
+        Item: require('./src/master/item'),
+        component: require('./src/master/component'),
+        article: {
+            ArticleApproval: require('./src/master/article/article-approval'),
+            ArticleBrand: require('./src/master/article/article-brand'),
+            ArticleCategory: require('./src/master/article/article-category'),
+            ArticleColor: require('./src/master/article/article-color'),
+            ArticleCostCalculationDetail: require('./src/master/article/article-cost-calculation-detail'),
+            ArticleCostCalculation: require('./src/master/article/article-cost-calculation'),
+            ArticleCounter: require('./src/master/article/article-counter'),
+            ArticleMaterial: require('./src/master/article/article-material'),
+            ArticleMotif: require('./src/master/article/article-motif'),
+            ArticleOrigin: require('./src/master/article/article-origin'),
+            ArticleSeason: require('./src/master/article/article-season'),
+            ArticleSize: require('./src/master/article/article-size'),
+            ArticleSubCounter: require('./src/master/article/article-sub-counter'),
+            ArticleTheme: require('./src/master/article/article-theme'),
+            ArticleType: require('./src/master/article/article-type'),
+            ArticleVariant: require('./src/master/article/article-variant'),
+            Article: require('./src/master/article/article'),
+        }
     },
     merchandiser: {
         SPK: require('./src/merchandiser/spk-doc'),
