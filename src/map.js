@@ -40,8 +40,9 @@ module.exports = {
         }
     },
     master: {
-        Item: 'goods',
-        FinishedGoods: 'goods',
+        Item: 'items',
+        FinishedGoods: 'items',
+        Material:'items',
         article: {
             ArticleApproval: 'article-approvals',
             ArticleBrand: 'article-brands',

@@ -1,6 +1,6 @@
 module.exports = {
     core: {
-        module: require("./core/module-validator"), 
+        module: require("./core/module-validator"),
         account: require("./core/account-validator"),
         article: {
             articleApproval: require("./core/article/article-approval-validator"),
@@ -59,6 +59,7 @@ module.exports = {
         item: require("./master/item-w-component-validator"),
         component: require("./master/component-validator"),
         finishedGoods: require("./master/finished-goods-validator"),
+        material: require("./master/material-validator")
     },
     manufacture: {
         fabricConsumptionDocument: require("./manufacture/fabric-consumption-document-validator"),

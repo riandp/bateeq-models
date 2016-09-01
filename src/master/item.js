@@ -3,8 +3,8 @@
 var BaseModel = require('capital-models').BaseModel;
 
 module.exports = class Item extends BaseModel {
-    constructor(source) {
-        super('item', '1.0.0');
+    constructor(source, version, type) {
+        super(type || 'item', version || '1.0.0');
 
         // Define properties.
         this.code = '';

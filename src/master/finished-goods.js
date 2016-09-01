@@ -1,19 +1,14 @@
 'use strict'
 
-var BaseModel = require('capital-models').BaseModel;
+var Item = require('./item');
 
-module.exports = class FinishedGoods extends BaseModel {
+module.exports = class FinishedGoods extends Item {
     constructor(source) {
-        super('finished-goods', '1.0.0');
+        super(source, '1.0.0', 'finished-goods');
 
         // Define properties.
-        
-        this.articleId = {};
-        this.code = '';
-        this.name = '';
-        this.description = '';
-        this.uom = '';
-        this.tags = '';
+
+        this.articleId = {}; 
 
         this.domesticCOGS = 0;
         this.domesticWholesale = 0;
@@ -24,10 +19,7 @@ module.exports = class FinishedGoods extends BaseModel {
         this.internationalWholesale = 0;
         this.internationalRetail = 0;
         this.internationalSale = 0;
-        
-        this.components = [];
-        this.pictures = [];
-
+  
         this.copy(source);
     }
 }
