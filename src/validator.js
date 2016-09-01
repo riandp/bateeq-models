@@ -57,7 +57,7 @@ module.exports = {
             article: require("./master/article/article-validator"),
             articleVariant: require("./master/article/article-variant-validator")
         },
-        item: require("./master/item-validator"),
+        item: require("./master/item-w-component-validator"),
         component: require("./master/component-validator"),
         finishedGoods: require("./master/finished-goods-validator"),
     },

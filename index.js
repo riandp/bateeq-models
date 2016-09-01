@@ -49,7 +49,7 @@ module.exports = {
     master: {
         FinishedGoods: require('./src/master/finished-goods'),
         Item: require('./src/master/item'),
-        component: require('./src/master/component'),
+        Component: require('./src/master/component'),
         article: {
             ArticleApproval: require('./src/master/article/article-approval'),
             ArticleBrand: require('./src/master/article/article-brand'),

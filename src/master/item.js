@@ -16,4 +16,12 @@ module.exports = class Item extends BaseModel {
 
         this.copy(source);
     }
+
+    stamp(actor, agent) {
+        super.stamp(actor, agent);
+        for (var component of this.components) {
+            if (component.stamp)
+                component.stamp(actor, agent);
+        }
+    }
 }
