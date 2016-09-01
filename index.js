@@ -1,7 +1,6 @@
 module.exports = {
     core: {
-        Module: require('./src/core/module'),
-        ModuleSeed: require('./src/core/module-seed'),
+        Module: require('./src/core/module'), 
         Account: require('./src/core/account'),
 
         article: {
