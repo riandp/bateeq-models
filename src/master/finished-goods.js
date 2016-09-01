@@ -12,6 +12,7 @@ module.exports = class FinishedGoods extends BaseModel {
         this.code = '';
         this.name = '';
         this.description = '';
+        this.uom = '';
         this.tags = '';
 
         this.domesticCOGS = 0;

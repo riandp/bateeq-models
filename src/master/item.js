@@ -10,6 +10,7 @@ module.exports = class Item extends BaseModel {
         this.code = '';
         this.name = '';
         this.description = '';
+        this.uom = '';
 
         this.components = [];
         this.tags = '';
