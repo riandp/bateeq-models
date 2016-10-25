@@ -1,11 +1,10 @@
 'use strict'
 
 var BaseModel = require('capital-models').BaseModel;
-//var ArticleVariant = require('../core/article/article-variant');
 
-module.exports = class PosPaymentItem extends BaseModel {
+module.exports = class SalesItem extends BaseModel {
     constructor(source) {
-        super('pos-payment-item', '1.0.0');
+        super('sales-item', '1.0.0');
 
         // Define properties.  
         this.articleVariantId = {};

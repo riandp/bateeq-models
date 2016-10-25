@@ -1,13 +1,11 @@
 'use strict'
 
 var BaseModel = require('capital-models').BaseModel;
-var PosPaymentItem = require('./pos-payment-item');
-//var PosPaymentType = require('../pos-payment-type');
-//var Storage = require('../core/inventory/storage');
+var SalesItem = require('./sales-item');
 
-module.exports = class PosPaymentDoc extends BaseModel {
+module.exports = class SalesDoc extends BaseModel {
     constructor(source) {
-        super('pos-payment-doc', '1.0.0');
+        super('sales-doc', '1.0.0');
 
         // Define properties.
         this.code = '';
@@ -22,7 +20,7 @@ module.exports = class PosPaymentDoc extends BaseModel {
         this.store = {};
          
         this.items = [];
-        this.paymentDetail = {};
+        this.salesDetail = {};
         this.remark = '';
 
         this.copy(source);
@@ -30,7 +28,7 @@ module.exports = class PosPaymentDoc extends BaseModel {
         var _items = [];
         for(var item of this.items)
         {
-            _items.push(new PosPaymentItem(item));
+            _items.push(new SalesItem(item));
         }
         this.items = _items;
     }

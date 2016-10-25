@@ -34,8 +34,3 @@ it("#07. Supplier should valid", function(){
     var Supplier = require('../src/inventory/supplier');
     validate.supplier(new Supplier());
 }) 
-
-it("#08. Store should valid", function(){
-    var Store = require('../src/inventory/store');
-    validate.store(new Store());
-}) 

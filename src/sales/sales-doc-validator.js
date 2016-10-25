@@ -1,6 +1,6 @@
 require("should");
-var validatePaymentItem = require("./pos-payment-item-validator");
-var validatePaymentDetail = require("./pos-payment-detail-validator");
+var validateSalesItem = require("./sales-item-validator");
+var validateSalesDetail = require("./sales-detail-validator");
 
 module.exports = function(data) {
     data.should.not.equal(null);
@@ -36,15 +36,15 @@ module.exports = function(data) {
     data.should.have.property('remark');
     data.remark.should.instanceof(String); 
     
-    data.should.have.property('paymentDetail');
-    data.paymentDetail.should.instanceof(Object); 
+    data.should.have.property('salesDetail');
+    data.salesDetail.should.instanceof(Object); 
     
     data.should.have.property('items');
     data.items.should.instanceof(Array);
  
-    validatePaymentDetail(data.paymentDetail);
+    //validateSalesDetail(data.salesDetail);
         
     for (var item of data.items) {
-        validatePaymentItem(item);
+        validateSalesItem(item);
     }
 };

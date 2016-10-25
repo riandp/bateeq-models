@@ -2,9 +2,6 @@
 
 var BaseModel = require('capital-models').BaseModel; 
 
-var Store = require('../inventory/store');
-var PromoProduct = require('./promo-product');
-
 module.exports = class PromoDiscount extends BaseModel {
     constructor(source) {
         super('promo-discount', '1.0.0');

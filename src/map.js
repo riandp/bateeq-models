@@ -62,21 +62,17 @@ module.exports = {
             ArticleType: 'article-types',
             ArticleVariant: 'article-variants',
             Article: 'articles',
-        }
+        },
+        Bank: 'banks',
+        CardType: 'card-types', 
+        Store: 'stores'
     },
     merchandiser: {
         SPKDoc: 'spk-docs'
-    },
-    posmaster: {
-        Bank: 'banks',
-        CardType: 'card-types',
-        PaymentType: 'payment-types'
-    },
-    pos: {
-        PaymentDoc: 'payment-documents'
-    },
-    promo: {
-        PromoDoc: 'promo-documents',
+    }, 
+    sales: {
+        SalesDoc: 'sales-docs',
+        PromoDoc: 'promo-docs',
         PromoProduct: 'promo-products',
         PromoDiscount: 'promo-discounts',
         RewardType: 'reward-types'

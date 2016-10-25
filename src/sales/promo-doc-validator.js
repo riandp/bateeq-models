@@ -1,6 +1,6 @@
 require("should");
 
-var validateStore = require("../inventory/store-validator");
+var validateStore = require("../master/store-validator");
 var validatePromoProduct = require("./promo-product-validator");
 
 module.exports = function(data) {

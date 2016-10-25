@@ -4,10 +4,8 @@ module.exports = function(data) {
     data.should.not.equal(null);
     data.should.instanceof(Object); 
 
-    data.should.have.property('paymentTypeId');
-    data.paymentTypeId.should.instanceof(Object); 
     data.should.have.property('paymentType');
-    data.paymentType.should.instanceof(Object);
+    data.paymentType.should.instanceof(String);
 
     data.should.have.property('voucherId');
     data.voucherId.should.instanceof(Object); 

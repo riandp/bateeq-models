@@ -1,16 +1,13 @@
 'use strict'
 
 var BaseModel = require('capital-models').BaseModel;
-//var Voucher = require('../core/article/article-variant');
-//var Bank = require('../core/article/article-variant');
 
-module.exports = class PosPaymentDetail extends BaseModel {
+module.exports = class SalesDetail extends BaseModel {
     constructor(source) {
-        super('pos-payment-type', '1.0.0');
+        super('sales-type', '1.0.0');
 
         // Define properties.  
-        this.paymentTypeId = {};
-        this.paymentType = {};
+        this.paymentType = '';
         this.voucherId = {};
         this.voucher = {};
         this.bankId = {};
