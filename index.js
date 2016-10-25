@@ -27,7 +27,6 @@ module.exports = {
         InventoryMovement: require('./src/inventory/inventory-movement'),
         Inventory: require('./src/inventory/inventory'),
         Storage: require('./src/inventory/storage'),
-        Store: require('./src/inventory/store'),
         TransferInDoc: require('./src/inventory/transfer-in-doc'),
         TransferInItem: require('./src/inventory/transfer-in-item'),
         TransferOutDoc: require('./src/inventory/transfer-out-doc'),
@@ -85,23 +84,7 @@ module.exports = {
         Promo: require('./src/sales/promo-doc'),
         PromoProduct: require('./src/sales/promo-product'),
         PromoDiscount: require('./src/sales/promo-discount'),
-        RewardType: require('./src/sales/reward-type')
-    },
-    posmaster: {
-        Bank: require('./src/pos-master/bank'),
-        CardType: require('./src/pos-master/card-type'),
-        PaymentType: require('./src/pos-master/payment-type')
-    },
-    pos: {
-        Payment: require('./src/pos/pos-payment-doc'),
-        PaymentItem: require('./src/pos/pos-payment-item'),
-        PaymentDetail: require('./src/pos/pos-payment-detail')
-    },
-    promo: {
-        Promo: require('./src/promo/promo-doc'),
-        PromoProduct: require('./src/promo/promo-product'),
-        PromoDiscount: require('./src/promo/promo-discount'),
-        RewardType: require('./src/promo/reward-type')
+        RewardType: require('./src/sales/reward-type') 
     },
     map: require("./src/map"),
     validator: require("./src/validator")
