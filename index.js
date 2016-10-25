@@ -27,6 +27,7 @@ module.exports = {
         InventoryMovement: require('./src/inventory/inventory-movement'),
         Inventory: require('./src/inventory/inventory'),
         Storage: require('./src/inventory/storage'),
+        Store: require('./src/inventory/store'),
         TransferInDoc: require('./src/inventory/transfer-in-doc'),
         TransferInItem: require('./src/inventory/transfer-in-item'),
         TransferOutDoc: require('./src/inventory/transfer-out-doc'),
@@ -73,6 +74,22 @@ module.exports = {
     merchandiser: {
         SPK: require('./src/merchandiser/spk-doc'),
         SPKItem: require('./src/merchandiser/spk-item')
+    },
+    posmaster: {
+        Bank: require('./src/pos-master/bank'),
+        CardType: require('./src/pos-master/card-type'),
+        PaymentType: require('./src/pos-master/payment-type')
+    },
+    pos: {
+        Payment: require('./src/pos/pos-payment-doc'),
+        PaymentItem: require('./src/pos/pos-payment-item'),
+        PaymentDetail: require('./src/pos/pos-payment-detail')
+    },
+    promo: {
+        Promo: require('./src/promo/promo-doc'),
+        PromoProduct: require('./src/promo/promo-product'),
+        PromoDiscount: require('./src/promo/promo-discount'),
+        RewardType: require('./src/promo/reward-type')
     },
     map: require("./src/map"),
     validator: require("./src/validator")

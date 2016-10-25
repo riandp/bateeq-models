@@ -11,3 +11,6 @@ test('@core', './core');
 test('@master', './master');  
 test('@master/article', './master-article');  
 test('@merchandiser', './merchandiser'); 
+test('@pos', './pos'); 
+test('@pos-master', './pos-master'); 
+test('@promo', './promo'); 

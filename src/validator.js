@@ -30,11 +30,12 @@ module.exports = {
         inventory: require("./inventory/inventory-validator"),
         inventoryMovement: require("./inventory/inventory-movement-validator"),
         storage: require("./inventory/storage-validator"),
+        store: require("./inventory/store-validator"),
         transferInDoc: require("./inventory/transfer-in-doc-validator"),
         transferInItem: require("./inventory/transfer-in-item-validator"),
         transferOutDoc: require("./inventory/transfer-out-doc-validator"),
         transferOutItem: require("./inventory/transfer-out-item-validator"),
-        supplier: require("./inventory/supplier-validator"),
+        supplier: require("./inventory/supplier-validator")
     },
     master: {
         article: {
@@ -69,10 +70,26 @@ module.exports = {
         costCalculationArticle: require("./manufacture/cost-calculation-article-validator"),
         costCalculationItem: require("./manufacture/cost-calculation-item-validator"),
         finishingItem: require("./manufacture/finishing-item-validator"),
-        finishing: require("./manufacture/finishing-validator"),
+        finishing: require("./manufacture/finishing-validator")
     },
     merchandiser: {
         SPKDoc: require("./merchandiser/spk-doc-validator"),
-        SPKItem: require("./merchandiser/spk-item-validator"),
+        SPKItem: require("./merchandiser/spk-item-validator")
+    },
+    posmaster: {
+        bank: require("./pos-master/bank-validator"),
+        cardType: require("./pos-master/card-type-validator"),
+        paymentType: require("./pos-master/payment-type-validator")
+    },
+    pos: {
+        paymentDoc: require("./pos/pos-payment-doc-validator"),
+        paymentItem: require("./pos/pos-payment-item-validator"),
+        paymentDetail: require("./pos/pos-payment-detail-validator")
+    },
+    promo: {
+        promoDoc: require("./promo/promo-doc-validator"),
+        promoProduct: require("./promo/promo-product-validator"),
+        promoDiscount: require("./promo/promo-discount-validator"),
+        rewardType: require("./promo/reward-type-validator")
     }
 };
