@@ -3,7 +3,7 @@ module.exports = {
         account: require("./auth/account-validator"),
         profile: require("./auth/profile-validator"),
         role: require("./auth/role-validator")
-    }, 
+    },
     inventory: {
         expeditionDoc: require("./inventory/expedition-doc-validator"),
         expeditionSPK: require("./inventory/expedition-spk-validator"),
@@ -41,7 +41,7 @@ module.exports = {
         item: require("./master/item-w-component-validator"),
         component: require("./master/component-validator"),
         finishedGoods: require("./master/finished-goods-validator"),
-        material: require("./master/material-validator"), 
+        material: require("./master/material-validator"),
         bank: require("./master/bank-validator"),
         cardType: require("./master/card-type-validator"),
         store: require("./master/store-validator")
@@ -59,7 +59,7 @@ module.exports = {
     merchandiser: {
         SPKDoc: require("./merchandiser/spk-doc-validator"),
         SPKItem: require("./merchandiser/spk-item-validator")
-    }, 
+    },
     sales: {
         salesDoc: require("./sales/sales-doc-validator"),
         salesItem: require("./sales/sales-item-validator"),
