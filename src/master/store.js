@@ -10,6 +10,7 @@ module.exports = class Store extends BaseModel {
         this.code = '';
         this.name = '';
         this.description = '';
+        this.salesTarget = 0;
         this.storageId = {};
         this.storage = {};
         this.salesCategoryId = {};

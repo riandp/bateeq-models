@@ -13,6 +13,9 @@ module.exports = function(data) {
     data.should.have.property('description');
     data.description.should.instanceof(String); 
     
+    data.should.have.property('salesTarget');
+    data.salesTarget.should.be.Number();
+    
     data.should.have.property('storageId');
     data.storageId.should.instanceof(Object);
     
