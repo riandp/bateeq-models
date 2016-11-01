@@ -7,8 +7,8 @@ module.exports = class SalesItem extends BaseModel {
         super('sales-item', '1.0.0');
 
         // Define properties.  
-        this.articleVariantId = {};
-        this.articleVariant = {};
+        this.itemId = {};
+        this.item = {};
         this.size = '';
         this.quantity = 0;
         this.price = 0;
