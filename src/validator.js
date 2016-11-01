@@ -44,6 +44,7 @@ module.exports = {
         material: require("./master/material-validator"),
         bank: require("./master/bank-validator"),
         cardType: require("./master/card-type-validator"),
+        module: require("./master/module-validator"),
         store: require("./master/store-validator")
     },
     manufacture: {

@@ -34,3 +34,8 @@ it("#07. Store should valid", function(){
     var Store = require('../src/master/store');
     validate.store(new Store());
 }) 
+
+it("#08. Module should valid", function(){
+    var Module = require('../src/master/module');
+    validate.module(new Module());
+}) 

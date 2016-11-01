@@ -50,6 +50,7 @@ module.exports = {
             ArticleVariant: 'article-variants',
             Article: 'articles',
         },
+        Module: 'modules',
         Bank: 'banks',
         CardType: 'card-types', 
         Store: 'stores'

@@ -31,6 +31,7 @@ module.exports = {
         Item: require('./src/master/item'),
         Material: require('./src/master/material'),
         Component: require('./src/master/component'),
+        Module: require('./src/master/module'),
         article: {
             ArticleApproval: require('./src/master/article/article-approval'),
             ArticleBrand: require('./src/master/article/article-brand'),
