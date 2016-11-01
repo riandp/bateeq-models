@@ -68,11 +68,23 @@ module.exports = {
             ArticleType: require('./src/master/article/article-type'),
             ArticleVariant: require('./src/master/article/article-variant'),
             Article: require('./src/master/article/article'),
-        }
+        }, 
+        Bank: require('./src/master/bank'),
+        CardType: require('./src/master/card-type'), 
+        Store: require('./src/master/store')
     },
     merchandiser: {
         SPK: require('./src/merchandiser/spk-doc'),
         SPKItem: require('./src/merchandiser/spk-item')
+    }, 
+    sales: {
+        Sales: require('./src/sales/sales-doc'),
+        SalesItem: require('./src/sales/sales-item'),
+        SalesDetail: require('./src/sales/sales-detail'),
+        Promo: require('./src/sales/promo-doc'),
+        PromoProduct: require('./src/sales/promo-product'),
+        PromoDiscount: require('./src/sales/promo-discount'),
+        RewardType: require('./src/sales/reward-type') 
     },
     map: require("./src/map"),
     validator: require("./src/validator")

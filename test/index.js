@@ -11,3 +11,4 @@ test('@manufacture', './manufacture');
 test('@master', './master');  
 test('@master/article', './master-article');  
 test('@merchandiser', './merchandiser'); 
+test('@sales', './sales');

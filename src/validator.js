@@ -16,7 +16,7 @@ module.exports = {
         transferInItem: require("./inventory/transfer-in-item-validator"),
         transferOutDoc: require("./inventory/transfer-out-doc-validator"),
         transferOutItem: require("./inventory/transfer-out-item-validator"),
-        supplier: require("./inventory/supplier-validator"),
+        supplier: require("./inventory/supplier-validator")
     },
     master: {
         article: {
@@ -41,7 +41,10 @@ module.exports = {
         item: require("./master/item-w-component-validator"),
         component: require("./master/component-validator"),
         finishedGoods: require("./master/finished-goods-validator"),
-        material: require("./master/material-validator")
+        material: require("./master/material-validator"), 
+        bank: require("./master/bank-validator"),
+        cardType: require("./master/card-type-validator"),
+        store: require("./master/store-validator")
     },
     manufacture: {
         fabricConsumptionDocument: require("./manufacture/fabric-consumption-document-validator"),
@@ -51,10 +54,19 @@ module.exports = {
         costCalculationArticle: require("./manufacture/cost-calculation-article-validator"),
         costCalculationItem: require("./manufacture/cost-calculation-item-validator"),
         finishingItem: require("./manufacture/finishing-item-validator"),
-        finishing: require("./manufacture/finishing-validator"),
+        finishing: require("./manufacture/finishing-validator")
     },
     merchandiser: {
         SPKDoc: require("./merchandiser/spk-doc-validator"),
-        SPKItem: require("./merchandiser/spk-item-validator"),
+        SPKItem: require("./merchandiser/spk-item-validator")
+    }, 
+    sales: {
+        salesDoc: require("./sales/sales-doc-validator"),
+        salesItem: require("./sales/sales-item-validator"),
+        salesDetail: require("./sales/sales-detail-validator"),
+        promoDoc: require("./sales/promo-doc-validator"),
+        promoProduct: require("./sales/promo-product-validator"),
+        promoDiscount: require("./sales/promo-discount-validator"),
+        rewardType: require("./sales/reward-type-validator")
     }
 };
