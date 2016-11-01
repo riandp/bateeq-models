@@ -1,4 +1,15 @@
 module.exports = {
+    auth: {
+        type: {
+            Account: 'account',
+            Profile: 'profile',
+            Role: 'role'
+        },
+        collection: {
+            Account: 'accounts',
+            Role: 'roles'
+        }
+    },
     inventory: {
         Storage: 'storages',
         StockIn: 'stock-ins',
@@ -15,30 +26,7 @@ module.exports = {
         Finishing: 'finishings',
         CostCalculationDocument: 'cost-calculation-documents',
         FabricConsumptionDocument: 'fabric-consumption-documents'
-    },
-    core: {
-        Module: 'modules', 
-        Account: 'accounts',
-        article: {
-            ArticleApproval: 'article-approvals',
-            ArticleBrand: 'article-brands',
-            ArticleCategory: 'article-categories',
-            ArticleColor: 'article-colors',
-            ArticleCostCalculationDetail: 'article-cost-calculation-details',
-            ArticleCostCalculation: 'article-cost-calculations',
-            ArticleCounter: 'article-counters',
-            ArticleMaterial: 'article-materials',
-            ArticleMotif: 'article-motifs',
-            ArticleOrigin: 'article-origins',
-            ArticleSeason: 'article-seasons',
-            ArticleSize: 'article-sub-sizes',
-            ArticleSubCounter: 'article-sub-counters',
-            ArticleTheme: 'article-themes',
-            ArticleType: 'article-types',
-            ArticleVariant: 'article-variants',
-            Article: 'articles',
-        }
-    },
+    }, 
     master: {
         Item: 'items',
         FinishedGoods: 'items',

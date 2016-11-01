@@ -2,7 +2,7 @@
 
 var BaseModel = require('capital-models').BaseModel;
 var Storage = require('../inventory/storage');
-var ArticleVariant = require('../core/article/article-variant');
+var Item = require('../master/item');
 
 module.exports = class InventoryMovement extends BaseModel {
     constructor(source) {
@@ -15,8 +15,8 @@ module.exports = class InventoryMovement extends BaseModel {
         this.date = new Date();
         this.reference = '';
         this.type = '';
-        this.articleVariantId = {};
-        this.articleVariant = new ArticleVariant();
+        this.itemId = {};
+        this.item = new Item();
         this.before = 0;
         this.quantity = 0;
         this.after = 0;

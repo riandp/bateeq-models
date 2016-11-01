@@ -1,27 +1,9 @@
 module.exports = {
-    core: {
-        module: require("./core/module-validator"),
-        account: require("./core/account-validator"),
-        article: {
-            articleApproval: require("./core/article/article-approval-validator"),
-            articleBrand: require("./core/article/article-brand-validator"),
-            articleCategory: require("./core/article/article-category-validator"),
-            articleColor: require("./core/article/article-color-validator"),
-            articleCostCalculationDetail: require("./core/article/article-cost-calculation-detail-validator"),
-            articleCostCalculation: require("./core/article/article-cost-calculation-validator"),
-            articleCounter: require("./core/article/article-counter-validator"),
-            articleMaterial: require("./core/article/article-material-validator"),
-            articleMotif: require("./core/article/article-motif-validator"),
-            articleOrigin: require("./core/article/article-origin-validator"),
-            articleSeason: require("./core/article/article-season-validator"),
-            articleSize: require("./core/article/article-size-validator"),
-            articleSubCounter: require("./core/article/article-sub-counter-validator"),
-            articleTheme: require("./core/article/article-theme-validator"),
-            articleType: require("./core/article/article-type-validator"),
-            article: require("./core/article/article-validator"),
-            articleVariant: require("./core/article/article-variant-validator")
-        }
-    },
+    auth: {
+        account: require("./auth/account-validator"),
+        profile: require("./auth/profile-validator"),
+        role: require("./auth/role-validator")
+    }, 
     inventory: {
         expeditionDoc: require("./inventory/expedition-doc-validator"),
         expeditionSPK: require("./inventory/expedition-spk-validator"),

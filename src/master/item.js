@@ -1,6 +1,7 @@
 'use strict';
 
 var BaseModel = require('capital-models').BaseModel;
+// var Component = require('./component');
 
 module.exports = class Item extends BaseModel {
     constructor(source, version, type) {
@@ -16,7 +17,11 @@ module.exports = class Item extends BaseModel {
         this.tags = '';
 
         this.copy(source);
-    }
+
+        // this.components = this.components.map(component => {
+        //     return new Component(component);
+        // });
+    };
 
     stamp(actor, agent) {
         super.stamp(actor, agent);

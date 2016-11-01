@@ -1,6 +1,7 @@
 'use strict'
 
 var BaseModel = require('capital-models').BaseModel;
+var Profile = require('./profile');
 
 module.exports = class Account extends BaseModel {
     constructor(source) {
@@ -10,7 +11,8 @@ module.exports = class Account extends BaseModel {
         this.username = '';
         this.password = '';
         this.isLocked = false;
-        this.config = {};
+        this.profile = new Profile();
+        this.roles = [];
 
         this.copy(source);
     }
