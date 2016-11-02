@@ -23,6 +23,8 @@ module.exports = class Article extends BaseModel {
         this.name = '';
         this.description = '';
         
+        this.realizationOrder = ''; 
+        
         this.version = '1.0';
     
         this.typeId = {};

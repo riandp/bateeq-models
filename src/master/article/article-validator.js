@@ -25,6 +25,9 @@ module.exports = function(data) {
 
     data.should.have.property('description');
     data.description.should.instanceof(String);
+    
+    data.should.have.property('realizationOrder');
+    data.realizationOrder.should.instanceof(String);
 
     data.should.have.property('version');
     data.version.should.instanceof(String);
