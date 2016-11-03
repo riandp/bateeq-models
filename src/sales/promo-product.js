@@ -6,8 +6,8 @@ module.exports = class PromoProduct extends BaseModel {
     constructor(source) {
         super('promo-product', '1.0.0');
     
-        this.articleVariantId = {};
-        this.articleVariant = {};
+        this.itemId = {};
+        this.item = {};
         this.promoDiscount = {};
         
         this.copy(source);
