@@ -15,6 +15,7 @@ module.exports = class SalesDoc extends BaseModel {
         this.discount = 0;
         this.grandTotal = 0; 
         this.reference = '';
+        this.shift = 0;
         
         this.storeId = {};
         this.store = {};

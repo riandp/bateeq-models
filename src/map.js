@@ -53,7 +53,8 @@ module.exports = {
         Module: 'modules',
         Bank: 'banks',
         CardType: 'card-types', 
-        Store: 'stores'
+        Store: 'stores',
+        StoreShift: 'store-shifts'
     },
     merchandiser: {
         SPKDoc: 'spk-docs'
