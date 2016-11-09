@@ -63,10 +63,13 @@ module.exports = {
         Sales: require('./src/sales/sales-doc'),
         SalesItem: require('./src/sales/sales-item'),
         SalesDetail: require('./src/sales/sales-detail'),
-        Promo: require('./src/sales/promo-doc'),
-        PromoProduct: require('./src/sales/promo-product'),
-        PromoDiscount: require('./src/sales/promo-discount'),
-        RewardType: require('./src/sales/reward-type') 
+        Promo: require('./src/sales/promo'),
+        PromoCriteria: require('./src/sales/promo-criteria'),
+        PromoReward: require('./src/sales/promo-reward'),
+        PromoCriteriaSelectedProduct: require('./src/sales/promo-criteria-selected-product'),
+        PromoRewardDiscountProduct: require('./src/sales/promo-reward-discount-product'),
+        PromoCriteriaPackage: require('./src/sales/promo-criteria-package'),
+        PromoRewardSpecialPrice: require('./src/sales/promo-reward-special-price')
     },
     map: require("./src/map"),
     validator: require("./src/validator")

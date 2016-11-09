@@ -2,13 +2,13 @@
 
 var BaseModel = require('capital-models').BaseModel; 
 
-module.exports = class PromoProduct extends BaseModel {
+module.exports = class PromoCriteriaSelectedProduct extends BaseModel {
     constructor(source) {
-        super('promo-product', '1.0.0');
+        super('promo-criteria-selected-product', '1.0.0');
     
         this.itemId = {};
         this.item = {};
-        this.promoDiscount = {};
+        this.minimumQuantity = 0;
         
         this.copy(source);
     }
