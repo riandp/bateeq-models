@@ -21,6 +21,7 @@ module.exports = class Store extends BaseModel {
         this.salesCapital = 0;
         this.shifts = [];
 
+
         this.copy(source);
         
         var _shifts = [];
