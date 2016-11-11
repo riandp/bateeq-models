@@ -35,7 +35,12 @@ it("#07. Store should valid", function(){
     validate.store(new Store());
 }) 
 
-it("#08. Module should valid", function(){
+it("#08. StoreShift should valid", function(){
+    var StoreShift = require('../src/master/store-shift');
+    validate.storeShift(new StoreShift());
+}) 
+
+it("#09. Module should valid", function(){
     var Module = require('../src/master/module');
     validate.module(new Module());
 }) 

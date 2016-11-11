@@ -1,6 +1,7 @@
 'use strict'
 
 var BaseModel = require('capital-models').BaseModel;
+var Shift = require('./store-shift');
 
 module.exports = class Store extends BaseModel {
     constructor(source) {
@@ -18,7 +19,15 @@ module.exports = class Store extends BaseModel {
         this.address = '';
         this.phone = '';
         this.salesCapital = 0;
-        
+        this.shifts = [];
+
         this.copy(source);
+        
+        var _shifts = [];
+        for(var shift of this.shifts)
+        {
+            _shifts.push(new Shift(shift));
+        }
+        this.shifts = _shifts;
     }
 }

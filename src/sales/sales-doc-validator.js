@@ -26,6 +26,9 @@ module.exports = function(data) {
     
     data.should.have.property('reference');
     data.reference.should.instanceof(String); 
+    
+    data.should.have.property('shift');
+    data.shift.should.be.Number();
  
     data.should.have.property('storeId');
     data.storeId.should.instanceof(Object); 

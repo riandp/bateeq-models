@@ -10,6 +10,12 @@ module.exports = function(data) {
     data.should.have.property('item');
     data.item.should.instanceof(Object);
 
+    data.should.have.property('promoId');
+    data.promoId.should.instanceof(Object);
+
+    data.should.have.property('promo');
+    data.promo.should.instanceof(Object);
+    
     data.should.have.property('size');
     data.size.should.instanceof(String); 
     

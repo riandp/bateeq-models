@@ -1,4 +1,5 @@
 require("should");
+var validateShift = require("./store-shift-validator");
 
 module.exports = function(data) {
     data.should.not.equal(null);
@@ -36,4 +37,11 @@ module.exports = function(data) {
     
     data.should.have.property('salesCapital');
     data.salesTarget.should.be.Number(); 
+
+    data.should.have.property('shifts');
+    data.shifts.should.instanceof(Array);
+    
+    for (var shift of data.shifts) {
+        validateShift(shift);
+    }
 };

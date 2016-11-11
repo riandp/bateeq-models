@@ -9,6 +9,8 @@ module.exports = class SalesItem extends BaseModel {
         // Define properties.  
         this.itemId = {};
         this.item = {};
+        this.promoId = {};
+        this.promo = {};
         this.size = '';
         this.quantity = 0;
         this.price = 0;
