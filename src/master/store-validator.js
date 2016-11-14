@@ -29,6 +29,15 @@ module.exports = function(data) {
     data.should.have.property('salesCategory');
     data.salesCategory.should.instanceof(Object);
     
+    data.should.have.property('address');
+    data.description.should.instanceof(String); 
+    
+    data.should.have.property('phone');
+    data.description.should.instanceof(String);
+    
+    data.should.have.property('salesCapital');
+    data.salesTarget.should.be.Number(); 
+
     data.should.have.property('shifts');
     data.shifts.should.instanceof(Array);
     
