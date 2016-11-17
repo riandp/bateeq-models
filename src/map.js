@@ -11,7 +11,6 @@ module.exports = {
         }
     },
     inventory: {
-        Storage: 'storages',
         StockIn: 'stock-ins',
         StockOut: 'stock-outs',
         Inventory: 'inventories',
@@ -19,8 +18,7 @@ module.exports = {
         TransferInDoc: 'transfer-in-docs',
         TransferOutDoc: 'transfer-out-docs',
         FinishedGoodsDoc: 'finished-goods-docs',
-        ExpeditionDoc: 'expedition-docs',
-        Supplier: 'suppliers'
+        ExpeditionDoc: 'expedition-docs'
     },
     manufacture: {
         Finishing: 'finishings',
@@ -63,4 +61,4 @@ module.exports = {
         SalesDoc: 'sales-docs',
         Promo: 'promos'
     }
-}
+};
