@@ -52,6 +52,8 @@ module.exports = {
         Bank: 'banks',
         CardType: 'card-types', 
         Store: 'stores',
+        Storage: 'storages',
+        Supplier: 'suppliers',
         StoreShift: 'store-shifts'
     },
     merchandiser: {
