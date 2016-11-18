@@ -45,7 +45,7 @@ module.exports = function(data) {
     data.should.have.property('items');
     data.items.should.instanceof(Array);
  
-    //validateSalesDetail(data.salesDetail);
+    validateSalesDetail(data.salesDetail);
         
     for (var item of data.items) {
         validateSalesItem(item);

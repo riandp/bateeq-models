@@ -66,6 +66,8 @@ module.exports = {
         salesDoc: require("./sales/sales-doc-validator"),
         salesItem: require("./sales/sales-item-validator"),
         salesDetail: require("./sales/sales-detail-validator"),
+        salesReturnDoc: require("./sales/sales-return-doc-validator"),
+        salesReturnItem: require("./sales/sales-return-item-validator"),
         promo: require("./sales/promo-validator"),
         promoCriteria: require("./sales/promo-criteria-validator"),
         promoReward: require("./sales/promo-reward-validator"),

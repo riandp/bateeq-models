@@ -61,6 +61,7 @@ module.exports = {
     }, 
     sales: {
         SalesDoc: 'sales-docs',
+        SalesReturnDoc: 'sales-return-docs',
         Promo: 'promos'
     }
 };

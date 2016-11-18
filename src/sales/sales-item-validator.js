@@ -1,5 +1,7 @@
 require("should");
 
+var validateSalesItemReturn = require("./sales-item-validator");
+
 module.exports = function(data) {
     data.should.not.equal(null);
     data.should.instanceof(Object);
@@ -42,4 +44,14 @@ module.exports = function(data) {
     
     data.should.have.property('total');
     data.total.should.be.Number(); 
+    
+    data.should.have.property('isReturn');
+    data.isReturn.should.be.Boolean(); 
+     
+    data.should.have.property('returnItems');
+    data.returnItems.should.instanceof(Array);
+    
+    for (var returnItem of data.returnItems) {
+        validateSalesItemReturn(returnItem);
+    }
 };
