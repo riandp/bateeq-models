@@ -7,14 +7,12 @@ module.exports = {
     inventory: {
         InventoryMovement: require('./src/inventory/inventory-movement'),
         Inventory: require('./src/inventory/inventory'),
-        Storage: require('./src/inventory/storage'),
         TransferInDoc: require('./src/inventory/transfer-in-doc'),
         TransferInItem: require('./src/inventory/transfer-in-item'),
         TransferOutDoc: require('./src/inventory/transfer-out-doc'),
         TransferOutItem: require('./src/inventory/transfer-out-item'),
         FinishedGoodsDoc: require('./src/inventory/finished-goods-doc'),
-        ExpeditionDoc: require('./src/inventory/expedition-doc'),
-        Supplier: require('./src/inventory/supplier')
+        ExpeditionDoc: require('./src/inventory/expedition-doc')
     },
     manufacture: {
         FabricConsumptionDocument: require('./src/manufacture/fabric-consumption-document'),
@@ -32,6 +30,8 @@ module.exports = {
         Material: require('./src/master/material'),
         Component: require('./src/master/component'),
         Module: require('./src/master/module'),
+        Storage: require('./src/master/storage'),
+        Supplier: require('./src/master/supplier'),
         article: {
             ArticleApproval: require('./src/master/article/article-approval'),
             ArticleBrand: require('./src/master/article/article-brand'),
@@ -63,6 +63,8 @@ module.exports = {
         Sales: require('./src/sales/sales-doc'),
         SalesItem: require('./src/sales/sales-item'),
         SalesDetail: require('./src/sales/sales-detail'),
+        SalesReturn: require('./src/sales/sales-return-doc'),
+        SalesReturnItem: require('./src/sales/sales-return-item'),
         Promo: require('./src/sales/promo'),
         PromoCriteria: require('./src/sales/promo-criteria'),
         PromoReward: require('./src/sales/promo-reward'),

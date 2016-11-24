@@ -2,6 +2,7 @@
 
 var BaseModel = require('capital-models').BaseModel;
 var SalesItem = require('./sales-item');
+var SalesDetail = require('./sales-detail');
 
 module.exports = class SalesDoc extends BaseModel {
     constructor(source) {
@@ -25,6 +26,8 @@ module.exports = class SalesDoc extends BaseModel {
         this.remark = '';
 
         this.copy(source);
+        
+        this.salesDetail = new SalesDetail(this.salesDetail);
         
         var _items = [];
         for(var item of this.items)

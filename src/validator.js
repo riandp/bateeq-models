@@ -11,12 +11,10 @@ module.exports = {
         inventoryMovementApproval: require("./inventory/inventory-movement-validator"),
         inventory: require("./inventory/inventory-validator"),
         inventoryMovement: require("./inventory/inventory-movement-validator"),
-        storage: require("./inventory/storage-validator"),
         transferInDoc: require("./inventory/transfer-in-doc-validator"),
         transferInItem: require("./inventory/transfer-in-item-validator"),
         transferOutDoc: require("./inventory/transfer-out-doc-validator"),
         transferOutItem: require("./inventory/transfer-out-item-validator"),
-        supplier: require("./inventory/supplier-validator")
     },
     master: {
         article: {
@@ -38,6 +36,8 @@ module.exports = {
             article: require("./master/article/article-validator"),
             articleVariant: require("./master/article/article-variant-validator")
         },
+        storage: require("./master/storage-validator"),
+        supplier: require("./master/supplier-validator"),
         item: require("./master/item-w-component-validator"),
         component: require("./master/component-validator"),
         finishedGoods: require("./master/finished-goods-validator"),
@@ -66,6 +66,8 @@ module.exports = {
         salesDoc: require("./sales/sales-doc-validator"),
         salesItem: require("./sales/sales-item-validator"),
         salesDetail: require("./sales/sales-detail-validator"),
+        salesReturnDoc: require("./sales/sales-return-doc-validator"),
+        salesReturnItem: require("./sales/sales-return-item-validator"),
         promo: require("./sales/promo-validator"),
         promoCriteria: require("./sales/promo-criteria-validator"),
         promoReward: require("./sales/promo-reward-validator"),

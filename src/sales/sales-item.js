@@ -1,6 +1,6 @@
 'use strict'
 
-var BaseModel = require('capital-models').BaseModel;
+var BaseModel = require('capital-models').BaseModel; 
 
 module.exports = class SalesItem extends BaseModel {
     constructor(source) {
@@ -20,7 +20,16 @@ module.exports = class SalesItem extends BaseModel {
         this.margin = 0;
         this.specialDiscount = 0;
         this.total = 0;
-
+        this.isReturn = false; 
+        this.returnItems = []; 
+ 
         this.copy(source);
+        
+        var _returnItems = [];
+        for(var returnItem of this.returnItems)
+        {
+            _returnItems.push(new SalesItem(returnItem));
+        }
+        this.returnItems = _returnItems;
     }
 }

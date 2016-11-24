@@ -44,3 +44,12 @@ it("#09. Module should valid", function(){
     var Module = require('../src/master/module');
     validate.module(new Module());
 }) 
+ 
+it("#10. Supplier should valid", function(){
+    var Supplier = require('../src/master/supplier');
+    validate.supplier(new Supplier());
+}) 
+it("#11. Storage should valid", function(){
+    var Storage = require('../src/master/storage');
+    validate.storage(new Storage());
+}) 

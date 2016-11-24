@@ -1,7 +1,7 @@
 'use strict'
 
 var BaseModel = require('capital-models').BaseModel;
-var Storage = require('../inventory/storage');
+var Storage = require('../master/storage');
 var Item = require('../master/item');
 
 module.exports = class InventoryMovement extends BaseModel {

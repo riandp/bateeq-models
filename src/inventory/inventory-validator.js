@@ -1,5 +1,5 @@
 require("should");
-var validateStorage = require("./storage-validator");
+var validateStorage = require("../master/storage-validator");
 var validateArticleVariant = require('../master/item-validator');
 
 module.exports = function(data) { 

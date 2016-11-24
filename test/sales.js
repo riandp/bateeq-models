@@ -40,4 +40,8 @@ it("#08. PromoRewardSpecialPrice should valid", function(){
     validate.promoRewardSpecialPrice(new PromoRewardSpecialPrice());
 })
 
+it("#09. SalesReturnDoc should valid", function(){
+    var SalesReturnDoc = require('../src/sales/sales-return-doc');
+    validate.salesReturnDoc(new SalesReturnDoc());
+}) 
 

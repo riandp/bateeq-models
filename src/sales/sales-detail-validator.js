@@ -36,5 +36,4 @@ module.exports = function(data) {
     
     data.should.have.property('cashAmount');
     data.cashAmount.should.be.Number();
- 
 };
