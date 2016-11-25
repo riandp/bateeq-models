@@ -45,6 +45,9 @@ module.exports = function(data) {
     data.should.have.property('salesDetail');
     data.salesDetail.should.instanceof(Object); 
     
+    data.should.have.property('isReturn');
+    data.isReturn.should.be.Boolean(); 
+    
     data.should.have.property('items');
     data.items.should.instanceof(Array);
  
