@@ -39,6 +39,9 @@ module.exports = function(data) {
     data.should.have.property('remark');
     data.remark.should.instanceof(String); 
     
+    data.should.have.property('isVoid');
+    data.isVoid.should.instanceof(Boolean); 
+
     data.should.have.property('salesDetail');
     data.salesDetail.should.instanceof(Object); 
     
