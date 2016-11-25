@@ -16,6 +16,11 @@ module.exports = function(data) {
     data.bankId.should.instanceof(Object); 
     data.should.have.property('bank');
     data.bank.should.instanceof(Object);
+    
+    data.should.have.property('bankCardId');
+    data.bankCardId.should.instanceof(Object); 
+    data.should.have.property('bankCard');
+    data.bankCard.should.instanceof(Object);
      
     data.should.have.property('cardTypeId');
     data.cardTypeId.should.instanceof(Object);
