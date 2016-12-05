@@ -32,6 +32,9 @@ module.exports = function(data) {
  
     data.should.have.property('returnItems');
     data.returnItems.should.instanceof(Array);
+
+    data.should.have.property('isVoid');
+    data.isVoid.should.instanceof(Boolean); 
     
     validateSales(data.salesDoc);
     

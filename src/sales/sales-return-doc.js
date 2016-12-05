@@ -30,5 +30,6 @@ module.exports = class SalesReturnDoc extends BaseModel {
             _returnItems.push(new SalesReturnItem(returnItem));
         }
         this.returnItems = _returnItems;
+        this.isVoid = false;
     }
 }
